@@ -5,39 +5,25 @@ import { QuestionSection } from './components/QuestionSection';
 import { AnswerSection } from './components/AnswerSection';
 import { useChat } from './hooks/useChat';
 
-/**
- * Main Application Component
- * Orchestrates the flow between uploading a PDF and asking questions.
- */
 function App() {
-    // State for the uploaded file
     const [selectedFile, setSelectedFile] = useState(null);
 
-    // Custom hook for chat logic logic
     const { answer, isLoading, askQuestion, clearAnswer } = useChat();
 
-    /**
-     * Helper to handle file selection changes.
-     * Resets the previous answer when a new file is chosen.
-     */
     const handleFileSelect = (file) => {
         setSelectedFile(file);
         if (file) {
-            // Clear previous conversation context if a new file is uploaded
+       
             clearAnswer();
         }
     };
 
-    /**
-     * Handles the form submission from the QuestionSection.
-     */
     const handleSendMessage = (question) => {
         if (!selectedFile) {
             alert('Please upload a PDF file first.');
             return;
         }
 
-        // Trigger the simulation
         askQuestion(question);
     };
 
