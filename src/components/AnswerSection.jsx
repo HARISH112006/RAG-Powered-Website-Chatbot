@@ -37,7 +37,7 @@ export function AnswerSection({ answer, isLoading }) {
                         ) : (
                             <>
                                 <div className={clsx(
-                                    "prose prose-blue max-w-none text-gray-700 leading-relaxed",
+                                    "prose prose-indigo max-w-none text-gray-700 leading-relaxed",
                                     !showFull && "line-clamp-6"
                                 )}>
                                     {answer}
@@ -45,7 +45,7 @@ export function AnswerSection({ answer, isLoading }) {
                                 {answer && answer.length > 300 && (
                                     <button
                                         onClick={() => setShowFull(!showFull)}
-                                        className="flex items-center gap-1 mt-4 text-sm font-semibold text-blue-600 hover:text-blue-700"
+                                        className="flex items-center gap-1 mt-4 text-sm font-semibold text-indigo-600 hover:text-indigo-700"
                                     >
                                         {showFull ? (
                                             <>Show Less <ChevronUp className="w-4 h-4" /></>

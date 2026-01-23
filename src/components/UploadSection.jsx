@@ -63,16 +63,16 @@ export function UploadSection({ onFileSelect, selectedFile }) {
                         className={twMerge(
                             "flex flex-col items-center justify-center w-full min-h-[240px] border-2 border-dashed rounded-xl cursor-pointer transition-all duration-200 bg-gray-50/50",
                             isDragging
-                                ? "border-blue-500 bg-blue-50/50"
-                                : "border-gray-200 hover:border-blue-400 hover:bg-gray-50"
+                                ? "border-indigo-500 bg-indigo-50/50"
+                                : "border-slate-200 hover:border-indigo-400 hover:bg-slate-50"
                         )}
                     >
                         <div className="flex flex-col items-center justify-center py-6 px-4">
-                            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                <Upload className="w-8 h-8 text-blue-600" />
+                            <div className="w-16 h-16 bg-indigo-50 rounded-full flex items-center justify-center mb-4">
+                                <Upload className="w-8 h-8 text-indigo-600" />
                             </div>
 
-                            <div className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg mb-3 transition-colors shadow-sm">
+                            <div className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-lg mb-3 transition-colors shadow-sm">
                                 Upload PDF
                             </div>
 
@@ -89,8 +89,8 @@ export function UploadSection({ onFileSelect, selectedFile }) {
                     </label>
                 ) : (
                     <div className="flex flex-col items-center justify-center w-full min-h-[240px] border-2 border-solid border-gray-200 rounded-xl bg-gray-50">
-                        <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                            <Upload className="w-8 h-8 text-green-600" />
+                        <div className="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mb-4">
+                            <Upload className="w-8 h-8 text-teal-600" />
                         </div>
                         <p className="text-lg font-medium text-gray-900 mb-2">{selectedFile.name}</p>
                         <button

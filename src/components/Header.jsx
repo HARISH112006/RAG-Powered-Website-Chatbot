@@ -6,7 +6,7 @@ import { Bot } from 'lucide-react';
 export function Header() {
     return (
         <header className="flex items-center gap-3 mb-8">
-            <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-200">
+            <div className="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-200">
                 <Bot className="w-6 h-6 text-white" />
             </div>
             <div>

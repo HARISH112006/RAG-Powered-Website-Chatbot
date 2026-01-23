@@ -41,7 +41,7 @@ export function QuestionSection({ onSendMessage, isLoading }) {
                         onKeyDown={handleKeyDown}
                         placeholder="Type your question here..."
                         disabled={isLoading}
-                        className="w-full min-h-[120px] p-4 text-base bg-gray-50 border border-gray-200 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-blue-100 focus:border-blue-400 transition-all placeholder:text-gray-400"
+                        className="w-full min-h-[120px] p-4 text-base bg-slate-50 border border-slate-200 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-indigo-100 focus:border-indigo-400 transition-all placeholder:text-slate-400"
                     />
 
                     <div className="flex flex-col gap-3">
@@ -51,8 +51,8 @@ export function QuestionSection({ onSendMessage, isLoading }) {
                             className={clsx(
                                 "w-full flex items-center justify-center gap-2 py-3 px-6 rounded-lg font-semibold text-white transition-all shadow-sm",
                                 question.trim() && !isLoading
-                                    ? "bg-blue-600 hover:bg-blue-700 active:scale-[0.99]"
-                                    : "bg-blue-400 cursor-not-allowed opacity-80"
+                                    ? "bg-indigo-600 hover:bg-indigo-700 active:scale-[0.99]"
+                                    : "bg-indigo-400 cursor-not-allowed opacity-80"
                             )}
                         >
                             {isLoading ? (

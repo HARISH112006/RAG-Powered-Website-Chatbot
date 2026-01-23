@@ -28,7 +28,7 @@ function App() {
     };
 
     return (
-        <div className="min-h-screen bg-gray-50 font-sans text-gray-900 selection:bg-blue-100 selection:text-blue-900">
+        <div className="min-h-screen bg-slate-50 font-sans text-gray-900 selection:bg-indigo-100 selection:text-indigo-900">
             <div className="max-w-3xl mx-auto px-4 py-8 min-h-screen flex flex-col">
                 <Header />
 
