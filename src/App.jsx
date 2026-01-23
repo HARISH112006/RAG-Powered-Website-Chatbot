@@ -13,7 +13,7 @@ function App() {
     const handleFileSelect = (file) => {
         setSelectedFile(file);
         if (file) {
-       
+
             clearAnswer();
         }
     };
@@ -28,34 +28,35 @@ function App() {
     };
 
     return (
-        <div className="min-h-screen bg-slate-50 font-sans text-gray-900 selection:bg-indigo-100 selection:text-indigo-900">
-            <div className="max-w-3xl mx-auto px-4 py-8 min-h-screen flex flex-col">
+        <div className="min-h-screen bg-gradient-to-br from-indigo-50/50 via-white to-slate-50/50 font-sans text-slate-900 selection:bg-indigo-100 selection:text-indigo-900">
+            <div className="max-w-3xl mx-auto px-6 py-12 min-h-screen flex flex-col">
                 <Header />
 
-                <main className="flex-1 w-full">
+                <main className="flex-1 w-full space-y-2">
                     {/* File Upload Area */}
                     <UploadSection
                         onFileSelect={handleFileSelect}
                         selectedFile={selectedFile}
                     />
 
-                    {/* Question Input Area */}
-                    <div className="transition-all duration-300 ease-in-out">
+                    {/* Chat Experience Area */}
+                    <div className="transition-all duration-500 ease-in-out">
                         <QuestionSection
                             onSendMessage={handleSendMessage}
                             isLoading={isLoading}
                         />
-                    </div>
 
-                    {/* Answer Display Area */}
-                    <AnswerSection
-                        answer={answer}
-                        isLoading={isLoading}
-                    />
+                        <AnswerSection
+                            answer={answer}
+                            isLoading={isLoading}
+                        />
+                    </div>
                 </main>
 
-                <footer className="py-8 text-center text-sm text-gray-400">
-                    <p>© {new Date().getFullYear()} RAG Chatbot. All rights reserved.</p>
+                <footer className="py-12 text-center">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
+                        © {new Date().getFullYear()} RAG Chatbot &bull; Built for Performance
+                    </p>
                 </footer>
             </div>
         </div>

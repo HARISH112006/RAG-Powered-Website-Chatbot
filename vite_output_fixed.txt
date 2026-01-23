@@ -1,0 +1,83 @@
+﻿[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 3 modules transformed.
+node.exe : 
+[31mΓ£ù[39m Build 
+failed in 511ms
+At line:1 char:1
++ & "C:\Program Files
+\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: ([31mΓ£   
+ ù[39m Build fai    
+led in 511ms:Str    
+ing) [], RemoteE    
+xception
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+[31merror during 
+build:
+[31m[vite:css] 
+[postcss] It looks 
+like you're trying 
+to use `tailwindcss` 
+directly as a 
+PostCSS plugin. The 
+PostCSS plugin has 
+moved to a separate 
+package, so to 
+continue using 
+Tailwind CSS with 
+PostCSS you'll need 
+to install `@tailwind
+css/postcss` and 
+update your PostCSS 
+configuration.[31m
+file: [36mC:/Users/p
+roha/OneDrive/Desktop
+/RAG CHATBOX/src/inde
+x.css:undefined:NaN[
+31m
+    at lt (C:\Users\p
+roha\OneDrive\Desktop
+\RAG CHATBOX\node_mod
+ules\tailwindcss\dist
+\lib.js:38:1643)
+    at 
+LazyResult.runOnRoot 
+(C:\Users\proha\OneDr
+ive\Desktop\RAG CHATB
+OX\node_modules\postc
+ss\lib\lazy-result.js
+:361:16)
+    at 
+LazyResult.runAsync (
+C:\Users\proha\OneDri
+ve\Desktop\RAG CHATBO
+X\node_modules\postcs
+s\lib\lazy-result.js:
+290:26)
+    at 
+LazyResult.async (C:\
+Users\proha\OneDrive\
+Desktop\RAG CHATBOX\n
+ode_modules\postcss\l
+ib\lazy-result.js:192
+:30)
+    at 
+LazyResult.then (C:\U
+sers\proha\OneDrive\D
+esktop\RAG CHATBOX\no
+de_modules\postcss\li
+b\lazy-result.js:436:
+17)[39m

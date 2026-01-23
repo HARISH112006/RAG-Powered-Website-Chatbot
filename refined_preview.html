@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refined RAG Chat UI - Option 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .outfit {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+
+        .pulse-online {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                opacity: 0.4;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.4;
+            }
+        }
+
+        .shadow-premium {
+            box-shadow: 0 20px 25px -5px rgba(79, 70, 229, 0.05), 0 8px 10px -6px rgba(79, 70, 229, 0.05);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-gradient-to-br from-indigo-50/50 via-white to-slate-50/50 min-h-screen flex items-center justify-center p-6">
+
+    <div class="max-w-2xl w-full space-y-8">
+
+        <!-- REFINED HEADER -->
+        <header class="flex flex-col items-center text-center space-y-2">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 gradient-bg rounded-xl shadow-lg flex items-center justify-center">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z">
+                        </path>
+                    </svg>
+                </div>
+                <h1 class="text-3xl font-bold outfit tracking-tight text-slate-900">RAG <span
+                        class="gradient-text">Chatbot</span></h1>
+            </div>
+            <div class="flex items-center space-x-2 bg-white px-3 py-1 rounded-full border border-slate-100 shadow-sm">
+                <span class="w-2 h-2 bg-emerald-500 rounded-full pulse-online"></span>
+                <span class="text-[10px] font-semibold uppercase tracking-widest text-slate-500">AI Assistant
+                    Online</span>
+            </div>
+        </header>
+
+        <!-- REFINED UPLOAD SECTION -->
+        <div
+            class="glass p-8 rounded-[2rem] shadow-premium text-center space-y-4 group cursor-pointer hover:border-indigo-200 transition-all duration-300">
+            <div
+                class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl mx-auto flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12">
+                    </path>
+                </svg>
+            </div>
+            <div class="space-y-1">
+                <p class="text-lg font-semibold outfit text-slate-800">Drop your document here</p>
+                <p class="text-xs text-slate-500">Support PDF, TXT or Markdown up to 10MB</p>
+            </div>
+        </div>
+
+        <!-- REFINED CHAT INTERFACE -->
+        <div class="space-y-6">
+            <!-- AI Response -->
+            <div class="flex items-start space-x-3">
+                <div
+                    class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 border border-slate-200">
+                    <span class="text-[10px] font-bold text-slate-400">AI</span>
+                </div>
+                <div class="glass p-5 rounded-3xl rounded-tl-none shadow-sm max-w-[85%] border-l-4 border-l-indigo-500">
+                    <p class="text-sm leading-relaxed text-slate-700">I've analyzed your document. It seems to be a
+                        research paper about **Large Language Models**. Would you like me to summarize the key findings
+                        or explain the methodology?</p>
+                </div>
+            </div>
+
+            <!-- User Question -->
+            <div class="flex items-start space-x-3 justify-end">
+                <div class="gradient-bg p-5 rounded-3xl rounded-tr-none shadow-lg max-w-[85%] text-white">
+                    <p class="text-sm">What is the conclusion of the research?</p>
+                </div>
+                <div class="w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center shrink-0 shadow-md">
+                    <span class="text-[10px] font-bold text-white">ME</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- REFINED INPUT BAR -->
+        <div class="relative group">
+            <div
+                class="absolute -inset-0.5 gradient-bg rounded-2xl blur opacity-10 group-focus-within:opacity-25 transition duration-1000">
+            </div>
+            <div class="relative glass rounded-2xl flex items-center px-6 py-4 space-x-4 shadow-xl">
+                <input type="text" placeholder="Ask anything about the document..."
+                    class="bg-transparent flex-1 text-sm text-slate-800 placeholder-slate-400 focus:outline-none">
+                <button
+                    class="gradient-bg p-2 rounded-xl text-white shadow-md hover:scale-105 active:scale-95 transition-all">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="text-center text-[10px] font-medium text-slate-400 uppercase tracking-widest pt-4">
+            Secured by AES-256 Encryption &bull; Powered by RAG-Assist
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

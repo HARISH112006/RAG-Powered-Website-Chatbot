@@ -30,46 +30,51 @@ export function QuestionSection({ onSendMessage, isLoading }) {
     };
 
     return (
-        <div className="w-full max-w-2xl mx-auto mb-6">
-            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
-                <h2 className="text-xl font-bold text-gray-900 mb-4">Ask a Question</h2>
+        <div className="w-full max-w-2xl mx-auto mb-8">
+            <div className="glass p-8 rounded-[2rem] shadow-premium">
+                <h2 className="text-xl font-bold text-slate-800 mb-6 outfit">Step 2: <span className="gradient-text">Ask a Question</span></h2>
 
-                <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                    <textarea
-                        value={question}
-                        onChange={(e) => setQuestion(e.target.value)}
-                        onKeyDown={handleKeyDown}
-                        placeholder="Type your question here..."
-                        disabled={isLoading}
-                        className="w-full min-h-[120px] p-4 text-base bg-slate-50 border border-slate-200 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-indigo-100 focus:border-indigo-400 transition-all placeholder:text-slate-400"
-                    />
+                <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+                    <div className="relative group">
+                        <div className="absolute -inset-0.5 gradient-bg rounded-2xl blur opacity-10 group-focus-within:opacity-25 transition duration-500"></div>
+                        <textarea
+                            value={question}
+                            onChange={(e) => setQuestion(e.target.value)}
+                            onKeyDown={handleKeyDown}
+                            placeholder="Type your question about the document..."
+                            disabled={isLoading}
+                            className="relative w-full min-h-[120px] p-5 text-base bg-white border border-slate-100 rounded-2xl resize-none focus:outline-none focus:ring-2 focus:ring-indigo-100 transition-all placeholder:text-slate-400 text-slate-700 shadow-sm"
+                        />
+                    </div>
 
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-4">
                         <button
                             type="submit"
                             disabled={!question.trim() || isLoading}
                             className={clsx(
-                                "w-full flex items-center justify-center gap-2 py-3 px-6 rounded-lg font-semibold text-white transition-all shadow-sm",
+                                "w-full flex items-center justify-center gap-3 py-4 px-8 rounded-2xl font-bold text-white transition-all shadow-lg active:scale-95",
                                 question.trim() && !isLoading
-                                    ? "bg-indigo-600 hover:bg-indigo-700 active:scale-[0.99]"
-                                    : "bg-indigo-400 cursor-not-allowed opacity-80"
+                                    ? "gradient-bg hover:shadow-indigo-200"
+                                    : "bg-slate-200 cursor-not-allowed text-slate-400"
                             )}
                         >
                             {isLoading ? (
                                 <>
                                     <Loader2 className="w-5 h-5 animate-spin" />
-                                    Generating Answer...
+                                    <span className="outfit tracking-wide">Analyzing Document...</span>
                                 </>
                             ) : (
                                 <>
                                     <Send className="w-5 h-5" />
-                                    Submit Question
+                                    <span className="outfit tracking-wide">Get Answer</span>
                                 </>
                             )}
                         </button>
-                        <p className="text-center text-sm text-gray-500">
-                            Please upload a PDF first
-                        </p>
+                        {!question.trim() && !isLoading && (
+                            <p className="text-center text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                                Powered by RAG-Assist Neural Retrieval
+                            </p>
+                        )}
                     </div>
                 </form>
             </div>

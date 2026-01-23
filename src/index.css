@@ -5,17 +5,12 @@
 @layer base {
     :root {
         --background: 210 40% 98%;
-        /* Slate-50 equivalent */
         --foreground: 222.2 84% 4.9%;
 
         --card: 0 0% 100%;
         --card-foreground: 222.2 84% 4.9%;
 
-        --popover: 0 0% 100%;
-        --popover-foreground: 222.2 84% 4.9%;
-
         --primary: 243 75% 59%;
-        /* Royal Indigo (indigo-600) */
         --primary-foreground: 210 40% 98%;
 
         --secondary: 210 40% 96.1%;
@@ -27,48 +22,65 @@
         --accent: 210 40% 96.1%;
         --accent-foreground: 222.2 47.4% 11.2%;
 
-        --destructive: 0 84.2% 60.2%;
-        --destructive-foreground: 210 40% 98%;
-
         --border: 214.3 31.8% 91.4%;
         --input: 214.3 31.8% 91.4%;
         --ring: 243 75% 59%;
-        /* Indigo Ring */
 
-        --radius: 0.5rem;
-    }
-
-    .dark {
-        --background: 222.2 84% 4.9%;
-        --foreground: 210 40% 98%;
-
-        --card: 222.2 84% 4.9%;
-        --card-foreground: 210 40% 98%;
-
-        --popover: 222.2 84% 4.9%;
-        --popover-foreground: 210 40% 98%;
-
-        --primary: 210 40% 98%;
-        --primary-foreground: 222.2 47.4% 11.2%;
-
-        --secondary: 217.2 32.6% 17.5%;
-        --secondary-foreground: 210 40% 98%;
-
-        --muted: 217.2 32.6% 17.5%;
-        --muted-foreground: 215 20.2% 65.1%;
-
-        --accent: 217.2 32.6% 17.5%;
-        --accent-foreground: 210 40% 98%;
-
-        --destructive: 0 62.8% 30.6%;
-        --destructive-foreground: 210 40% 98%;
-
-        --border: 217.2 32.6% 17.5%;
-        --input: 217.2 32.6% 17.5%;
-        --ring: 212.7 26.8% 83.9%;
+        --radius: 1rem;
     }
 
     body {
-        @apply bg-background text-foreground;
+        @apply bg-slate-50 text-slate-900 antialiased selection:bg-indigo-100 selection:text-indigo-900;
+        font-family: 'Inter', system-ui, sans-serif;
     }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .font-display {
+        font-family: 'Outfit', sans-serif;
+    }
+}
+
+@layer components {
+    .glass {
+        @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl;
+    }
+
+    .gradient-text {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600;
+    }
+
+    .gradient-bg {
+        @apply bg-gradient-to-r from-indigo-600 to-violet-600;
+    }
+
+    .shadow-premium {
+        @apply shadow-[0_20px_50px_rgba(79, 70, 229, 0.1)];
+    }
+
+    .chat-bubble-user {
+        @apply gradient-bg text-white shadow-lg rounded-[1.5rem] rounded-tr-none;
+    }
+
+    .chat-bubble-ai {
+        @apply glass text-slate-700 shadow-sm rounded-[1.5rem] rounded-tl-none border-l-4 border-l-indigo-500;
+    }
+}
+
+@keyframes pulse-soft {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.animate-pulse-soft {
+    animation: pulse-soft 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
