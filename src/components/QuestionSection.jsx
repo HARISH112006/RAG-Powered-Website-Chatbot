@@ -30,54 +30,39 @@ export function QuestionSection({ onSendMessage, isLoading }) {
     };
 
     return (
-        <div className="w-full max-w-2xl mx-auto mb-8">
-            <div className="glass p-8 rounded-[2rem] shadow-premium">
-                <h2 className="text-xl font-bold text-slate-800 mb-6 outfit">Step 2: <span className="gradient-text">Ask a Question</span></h2>
-
-                <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-                    <div className="relative group">
-                        <div className="absolute -inset-0.5 gradient-bg rounded-2xl blur opacity-10 group-focus-within:opacity-25 transition duration-500"></div>
-                        <textarea
-                            value={question}
-                            onChange={(e) => setQuestion(e.target.value)}
-                            onKeyDown={handleKeyDown}
-                            placeholder="Type your question about the document..."
-                            disabled={isLoading}
-                            className="relative w-full min-h-[120px] p-5 text-base bg-white border border-slate-100 rounded-2xl resize-none focus:outline-none focus:ring-2 focus:ring-indigo-100 transition-all placeholder:text-slate-400 text-slate-700 shadow-sm"
-                        />
-                    </div>
-
-                    <div className="flex flex-col gap-4">
-                        <button
-                            type="submit"
-                            disabled={!question.trim() || isLoading}
-                            className={clsx(
-                                "w-full flex items-center justify-center gap-3 py-4 px-8 rounded-2xl font-bold text-white transition-all shadow-lg active:scale-95",
-                                question.trim() && !isLoading
-                                    ? "gradient-bg hover:shadow-indigo-200"
-                                    : "bg-slate-200 cursor-not-allowed text-slate-400"
-                            )}
-                        >
-                            {isLoading ? (
-                                <>
-                                    <Loader2 className="w-5 h-5 animate-spin" />
-                                    <span className="outfit tracking-wide">Analyzing Document...</span>
-                                </>
-                            ) : (
-                                <>
-                                    <Send className="w-5 h-5" />
-                                    <span className="outfit tracking-wide">Get Answer</span>
-                                </>
-                            )}
-                        </button>
-                        {!question.trim() && !isLoading && (
-                            <p className="text-center text-[10px] font-bold uppercase tracking-widest text-slate-400">
-                                Powered by RAG-Assist Neural Retrieval
-                            </p>
+        <div className="w-full max-w-2xl mx-auto">
+            <form onSubmit={handleSubmit} className="relative group">
+                <div className="absolute -inset-0.5 gradient-bg rounded-2xl blur opacity-10 group-focus-within:opacity-25 transition duration-1000"></div>
+                <div className="relative glass rounded-2xl flex items-center px-4 py-3 space-x-3 shadow-xl">
+                    <textarea
+                        value={question}
+                        onChange={(e) => setQuestion(e.target.value)}
+                        onKeyDown={handleKeyDown}
+                        placeholder="Ask anything about the document..."
+                        disabled={isLoading}
+                        rows={1}
+                        className="bg-transparent flex-1 text-sm text-slate-800 placeholder-slate-400 focus:outline-none resize-none pt-2"
+                        style={{ minHeight: '44px' }}
+                    />
+                    <button
+                        type="submit"
+                        disabled={!question.trim() || isLoading}
+                        className={clsx(
+                            "gradient-bg p-2.5 rounded-xl text-white shadow-md transition-all shrink-0",
+                            question.trim() && !isLoading ? "hover:scale-105 active:scale-95" : "opacity-30 cursor-not-allowed"
                         )}
-                    </div>
-                </form>
-            </div>
+                    >
+                        {isLoading ? (
+                            <Loader2 className="w-5 h-5 animate-spin" />
+                        ) : (
+                            <Send className="w-5 h-5" />
+                        )}
+                    </button>
+                </div>
+            </form>
+            <p className="text-center text-[10px] font-medium text-slate-400 uppercase tracking-widest mt-8">
+                Secured by AES-256 Encryption &bull; Powered by RAG-Assist
+            </p>
         </div>
     );
 }
