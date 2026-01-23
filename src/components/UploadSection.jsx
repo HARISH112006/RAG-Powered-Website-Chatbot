@@ -1,100 +1,41 @@
 import { useCallback, useState } from 'react';
-import { Upload } from 'lucide-react';
-import { twMerge } from 'tailwind-merge';
+import { FileCode2 } from 'lucide-react';
 
 /**
- * Component for handling file uploads via drag-and-drop or click.
- * @param {Object} props
- * @param {function} props.onFileSelect - Callback when a file is selected
- * @param {File} props.selectedFile - The currently selected file
+ * Cyber-Luxe V3 Upload: Modular ingest protocol with laser-scan feedback.
  */
 export function UploadSection({ onFileSelect, selectedFile }) {
     const [isDragging, setIsDragging] = useState(false);
 
-    const handleDragOver = useCallback((e) => {
-        e.preventDefault();
-        setIsDragging(true);
-    }, []);
-
-    const handleDragLeave = useCallback((e) => {
-        e.preventDefault();
-        setIsDragging(false);
-    }, []);
-
-    const handleDrop = useCallback((e) => {
-        e.preventDefault();
-        setIsDragging(false);
-
-        if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
-            const file = e.dataTransfer.files[0];
-            // Validate file type
-            if (file.type === 'application/pdf') {
-                onFileSelect(file);
-            } else {
-                alert('Please upload a PDF file.');
-            }
-        }
+    const handleFile = useCallback((file) => {
+        if (file?.type === 'application/pdf') onFileSelect(file);
+        else alert('Payload rejected: Requires PDF format.');
     }, [onFileSelect]);
 
-    /**
-     * Handles standard file input change event.
-     */
-    const handleFileInputChange = (e) => {
-        if (e.target.files && e.target.files.length > 0) {
-            const file = e.target.files[0];
-            if (file.type === 'application/pdf') {
-                onFileSelect(file);
-            } else {
-                alert('Please upload a PDF file.');
-            }
-        }
-    }
-
     return (
-        <div className="w-full max-w-2xl mx-auto mb-8">
-            {!selectedFile ? (
-                <label
-                    onDragOver={handleDragOver}
-                    onDragLeave={handleDragLeave}
-                    onDrop={handleDrop}
-                    className={twMerge(
-                        "glass p-8 rounded-[2rem] shadow-premium text-center space-y-4 group cursor-pointer border border-transparent hover:border-indigo-200 transition-all duration-300 block",
-                        isDragging && "scale-[0.98] border-indigo-300 bg-indigo-50/30"
-                    )}
-                >
-                    <div className="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl mx-auto flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <Upload className="w-8 h-8" />
-                    </div>
-                    <div className="space-y-1">
-                        <p className="text-lg font-semibold outfit text-slate-800">Drop your document here</p>
-                        <p className="text-xs text-slate-500">Support PDF up to 10MB</p>
-                    </div>
-                    <input
-                        type="file"
-                        className="hidden"
-                        accept=".pdf"
-                        onChange={handleFileInputChange}
-                    />
-                </label>
-            ) : (
-                <div className="glass p-8 rounded-[2rem] shadow-premium flex items-center justify-between group animate-in fade-in slide-in-from-bottom-4 duration-500">
-                    <div className="flex items-center space-x-4">
-                        <div className="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center">
-                            <Upload className="w-6 h-6" />
-                        </div>
-                        <div className="text-left">
-                            <p className="text-sm font-bold text-slate-800 line-clamp-1 outfit">{selectedFile.name}</p>
-                            <p className="text-[10px] text-emerald-600 font-bold uppercase tracking-widest">Ready for analysis</p>
-                        </div>
-                    </div>
-                    <button
-                        onClick={() => onFileSelect(null)}
-                        className="text-xs font-bold text-red-400 hover:text-red-500 uppercase tracking-widest"
-                    >
-                        Change
-                    </button>
+        <div className="glass-panel rounded-[2.5rem] p-10 flex flex-col items-center text-center glow-hover relative overflow-hidden group grow min-h-[300px]">
+            <div className="upload-scan" />
+
+            <div className="mb-8 w-24 h-24 bg-white/[0.03] rounded-3xl flex items-center justify-center border border-white/5 group-hover:bg-violet-600/10 group-hover:border-violet-500/30 transition-all duration-500 shadow-xl">
+                <FileCode2 className="w-12 h-12 text-gray-500 group-hover:text-violet-400 group-hover:scale-110 transition-all duration-500" strokeWidth={1} />
+            </div>
+
+            <div className="space-y-2">
+                <h3 className="text-xl font-bold space-font tracking-tight">Protocol: Data Ingest</h3>
+                <p className="text-xs text-gray-500 max-w-[200px] leading-relaxed mx-auto">
+                    {selectedFile ? `Encrypted payload: ${selectedFile.name}` : 'Awaiting encrypted PDF stream for multi-vector indexing.'}
+                </p>
+            </div>
+
+            <label className="w-full mt-10">
+                <input
+                    type="file" className="hidden" accept=".pdf"
+                    onChange={(e) => handleFile(e.target.files[0])}
+                />
+                <div className="py-4 bg-white/5 border border-white/10 rounded-2xl text-[11px] font-black uppercase tracking-[0.2em] cursor-pointer hover:bg-violet-600 hover:text-white transition-all shadow-lg active:scale-95">
+                    {selectedFile ? 'Swap Payload' : 'Upload Payload'}
                 </div>
-            )}
+            </label>
         </div>
     );
 }

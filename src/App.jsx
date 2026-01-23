@@ -6,51 +6,52 @@ import { AnswerSection } from './components/AnswerSection';
 import { useChat } from './hooks/useChat';
 
 /**
- * Main application entry point that manages the document analysis flow.
- * Coordinates between file uploading, chat interaction, and AI responses.
+ * Cyber-Luxe V3 Entry Point: High-density neural interface.
+ * Implements an asymmetric split-screen layout for focused interaction.
  */
 function App() {
     const [selectedFile, setSelectedFile] = useState(null);
-
     const { answer, isLoading, askQuestion, clearAnswer } = useChat();
 
-    const handleFileSelect = (file) => {
+    const handleFile = (file) => {
         setSelectedFile(file);
-        if (file) {
-            clearAnswer();
-        }
-    };
-
-    const handleSendMessage = (question) => {
-        if (!selectedFile) {
-            alert('Please upload a PDF file first.');
-            return;
-        }
-
-        askQuestion(question);
+        if (file) clearAnswer();
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-indigo-50/50 via-white to-slate-50/50 font-sans text-slate-900 selection:bg-indigo-100 selection:text-indigo-900 flex items-center justify-center p-6">
-            <div className="max-w-2xl w-full space-y-8 py-10">
-                <Header />
+        <div className="min-h-screen flex items-center justify-center p-6 relative">
+            <div className="scanlines" />
+            <div className="neural-bg" />
 
-                <main className="space-y-6">
-                    {/* Primary document upload interface */}
+            <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-12 gap-8 h-[90vh] max-h-[1000px]">
+
+                {/* Asymmetric Sidebar: Identity & Protocols */}
+                <aside className="md:col-span-4 flex flex-col gap-8 h-full">
+                    <Header />
                     <UploadSection
-                        onFileSelect={handleFileSelect}
+                        onFileSelect={handleFile}
                         selectedFile={selectedFile}
                     />
 
-                    {/* Historical and current AI analysis responses */}
-                    <AnswerSection
-                        answer={answer}
-                        isLoading={isLoading}
-                    />
+                    {/* System Latency Metrics */}
+                    <div className="glass-panel rounded-[2.5rem] p-6 flex justify-between items-center bg-white/[0.02] shrink-0">
+                        <div className="space-y-1">
+                            <p className="text-[9px] font-bold text-gray-500 uppercase tracking-widest">Latency</p>
+                            <p className="text-sm font-bold text-cyan-400">0.02ms</p>
+                        </div>
+                        <div className="h-8 w-[1px] bg-white/10" />
+                        <div className="space-y-1 text-right">
+                            <p className="text-[9px] font-bold text-gray-500 uppercase tracking-widest">Model</p>
+                            <p className="text-sm font-bold text-violet-400">GPT-NEURAL</p>
+                        </div>
+                    </div>
+                </aside>
 
-                    {/* Real-time conversational input bar */}
+                {/* Main Viewport: Neural Link Stream */}
+                <main className="md:col-span-8 glass-panel rounded-[3rem] p-10 flex flex-col overflow-hidden relative">
+                    <AnswerSection answer={answer} isLoading={isLoading} />
                     <QuestionSection
-                        onSendMessage={handleSendMessage}
+                        onSendMessage={(q) => selectedFile ? askQuestion(q) : alert('Protocols inactive: Upload PDF first.')}
                         isLoading={isLoading}
                     />
                 </main>

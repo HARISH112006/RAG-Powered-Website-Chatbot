@@ -1,49 +1,31 @@
-import { useState } from 'react';
-import { ChevronDown, ChevronUp, FileText } from 'lucide-react';
-import { clsx } from 'clsx';
+import { Terminal } from 'lucide-react';
 
 /**
- * Component responsible for displaying the answer.
- * @param {Object} props
- * @param {string|null} props.answer - The answer text to display
- * @param {boolean} props.isLoading - Loading state
+ * Cyber-Luxe V3 Answer: Cinematic conversation stream with technical taxonomy.
  */
 export function AnswerSection({ answer, isLoading }) {
-    const [showFull, setShowFull] = useState(false);
+    if (!answer && !isLoading) return null;
 
     return (
-        <div className="w-full space-y-6 mb-8">
-            {!answer && !isLoading ? (
-                <div className="glass p-10 rounded-[2rem] shadow-premium text-center border-2 border-dashed border-slate-100 flex flex-col items-center justify-center">
-                    <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-4 shadow-sm">
-                        <FileText className="w-8 h-8 text-slate-300" />
-                    </div>
-                    <p className="text-slate-400 text-sm font-medium max-w-[200px]">
-                        The analysis result will appear here as a conversation
-                    </p>
+        <div className="flex-1 overflow-y-auto space-y-12 pr-4 custom-scrollbar">
+            <div className="flex flex-col gap-4 animate-in fade-in slide-in-from-left-4 duration-700">
+                <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-violet-500 rounded-full animate-pulse" />
+                    <span className="text-[9px] font-bold uppercase tracking-widest text-violet-400">System_C01_Response</span>
                 </div>
-            ) : (
-                <div className="space-y-6 animate-in fade-in duration-700">
-                    <div className="flex items-start space-x-3">
-                        <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 border border-slate-200">
-                            <span className="text-[10px] font-bold text-slate-400">AI</span>
+
+                <div className="p-8 bg-white/[0.02] border border-white/5 rounded-[2rem] max-w-[90%] leading-relaxed text-gray-300 text-sm shadow-2xl">
+                    {isLoading ? (
+                        <div className="flex gap-2">
+                            <span className="w-1 h-1 bg-violet-500/50 rounded-full animate-bounce" />
+                            <span className="w-1 h-1 bg-violet-500/50 rounded-full animate-bounce [animation-delay:0.2s]" />
+                            <span className="w-1 h-1 bg-violet-500/50 rounded-full animate-bounce [animation-delay:0.4s]" />
                         </div>
-                        <div className="glass p-5 rounded-3xl rounded-tl-none shadow-premium max-w-[85%] border-l-4 border-l-indigo-500">
-                            {isLoading ? (
-                                <div className="flex items-center space-x-2 py-2">
-                                    <div className="w-2 h-2 bg-indigo-400 rounded-full animate-bounce"></div>
-                                    <div className="w-2 h-2 bg-indigo-400 rounded-full animate-bounce [animation-delay:-0.15s]"></div>
-                                    <div className="w-2 h-2 bg-indigo-400 rounded-full animate-bounce [animation-delay:-0.3s]"></div>
-                                </div>
-                            ) : (
-                                <div className="text-sm leading-relaxed text-slate-700">
-                                    {answer}
-                                </div>
-                            )}
-                        </div>
-                    </div>
+                    ) : (
+                        <p>{answer}</p>
+                    )}
                 </div>
-            )}
+            </div>
         </div>
     );
 }

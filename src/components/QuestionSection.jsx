@@ -1,67 +1,45 @@
 import { useState } from 'react';
-import { Send, Loader2 } from 'lucide-react';
-import { clsx } from 'clsx';
+import { Zap } from 'lucide-react';
 
 /**
- * Component for entering and submitting questions.
- * @param {Object} props
- * @param {function} props.onSendMessage - Callback when a message is sent
- * @param {boolean} props.isLoading - Whether an answer is currently being generated
+ * Cyber-Luxe V3 Input: Terminal-style query command with reactive glowing orbit.
  */
 export function QuestionSection({ onSendMessage, isLoading }) {
-    const [question, setQuestion] = useState('');
+    const [query, setQuery] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (question.trim() && !isLoading) {
-            onSendMessage(question);
-            setQuestion('');
-        }
-    };
-
-    /**
-     * Submit on Enter key (without Shift)
-     */
-    const handleKeyDown = (e) => {
-        if (e.key === 'Enter' && !e.shiftKey) {
-            e.preventDefault();
-            handleSubmit(e);
+        if (query.trim() && !isLoading) {
+            onSendMessage(query);
+            setQuery('');
         }
     };
 
     return (
-        <div className="w-full max-w-2xl mx-auto">
-            <form onSubmit={handleSubmit} className="relative group">
-                <div className="absolute -inset-0.5 gradient-bg rounded-2xl blur opacity-10 group-focus-within:opacity-25 transition duration-1000"></div>
-                <div className="relative glass rounded-2xl flex items-center px-6 py-4 space-x-4 shadow-xl">
-                    <textarea
-                        value={question}
-                        onChange={(e) => setQuestion(e.target.value)}
-                        onKeyDown={handleKeyDown}
-                        placeholder="Ask anything about the document..."
-                        disabled={isLoading}
-                        rows={1}
-                        className="bg-transparent flex-1 text-sm text-slate-800 placeholder-slate-400 focus:outline-none resize-none pt-1"
-                    />
-                    <button
-                        type="submit"
-                        disabled={!question.trim() || isLoading}
-                        className={clsx(
-                            "gradient-bg p-2 rounded-xl text-white shadow-md transition-all shrink-0",
-                            question.trim() && !isLoading ? "hover:scale-105 active:scale-95" : "opacity-30 cursor-not-allowed"
-                        )}
-                    >
-                        {isLoading ? (
-                            <Loader2 className="w-5 h-5 animate-spin" />
-                        ) : (
-                            <Send className="w-5 h-5" />
-                        )}
-                    </button>
-                </div>
+        <div className="mt-8 relative shrink-0">
+            <div className="absolute -inset-1 bg-gradient-to-r from-violet-600 to-cyan-500 rounded-3xl blur-xl opacity-10" />
+
+            <form onSubmit={handleSubmit} className="relative bg-black/60 border border-white/10 rounded-3xl p-3 flex items-center gap-3 active:border-violet-500/30 transition-colors">
+                <input
+                    type="text"
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                    placeholder="Execute query command..."
+                    disabled={isLoading}
+                    className="bg-transparent flex-1 px-5 text-sm text-white focus:outline-none placeholder:text-gray-700 font-medium"
+                />
+                <button
+                    disabled={!query.trim() || isLoading}
+                    className="bg-violet-600 text-white w-14 h-14 rounded-2xl flex items-center justify-center shadow-2xl hover:bg-violet-500 transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed group"
+                >
+                    <Zap className={`w-6 h-6 transition-transform ${isLoading ? 'animate-spin' : 'group-hover:rotate-12'}`} strokeWidth={2} />
+                </button>
             </form>
-            <footer className="text-center text-[10px] font-medium text-slate-400 uppercase tracking-[0.2em] pt-8">
-                Secured by AES-256 Encryption &bull; Powered by RAG-Assist
-            </footer>
+
+            <div className="flex justify-between items-center px-6 mt-4 opacity-30">
+                <span className="text-[8px] font-black uppercase tracking-[0.3em]">Encrypted Tunnel: Secured</span>
+                <span className="text-[8px] font-black uppercase tracking-[0.3em]">Neural core: v3.0</span>
+            </div>
         </div>
     );
 }
