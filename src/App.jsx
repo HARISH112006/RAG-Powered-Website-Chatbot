@@ -5,6 +5,10 @@ import { QuestionSection } from './components/QuestionSection';
 import { AnswerSection } from './components/AnswerSection';
 import { useChat } from './hooks/useChat';
 
+/**
+ * Main application entry point that manages the document analysis flow.
+ * Coordinates between file uploading, chat interaction, and AI responses.
+ */
 function App() {
     const [selectedFile, setSelectedFile] = useState(null);
 
@@ -32,16 +36,19 @@ function App() {
                 <Header />
 
                 <main className="space-y-6">
+                    {/* Primary document upload interface */}
                     <UploadSection
                         onFileSelect={handleFileSelect}
                         selectedFile={selectedFile}
                     />
 
+                    {/* Historical and current AI analysis responses */}
                     <AnswerSection
                         answer={answer}
                         isLoading={isLoading}
                     />
 
+                    {/* Real-time conversational input bar */}
                     <QuestionSection
                         onSendMessage={handleSendMessage}
                         isLoading={isLoading}
