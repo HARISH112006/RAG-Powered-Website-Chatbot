@@ -1,8 +1,9 @@
 import { useCallback, useState } from 'react';
-import { FileCode2 } from 'lucide-react';
+import { CloudRain } from 'lucide-react';
+import { twMerge } from 'tailwind-merge';
 
 /**
- * Cyber-Luxe V3 Upload: Modular ingest protocol with laser-scan feedback.
+ * Glassmorphic Flow Upload: Soft, floating interaction zone for document processing.
  */
 export function UploadSection({ onFileSelect, selectedFile }) {
     const [isDragging, setIsDragging] = useState(false);
@@ -13,27 +14,37 @@ export function UploadSection({ onFileSelect, selectedFile }) {
     }, [onFileSelect]);
 
     return (
-        <div className="glass-panel rounded-[2.5rem] p-10 flex flex-col items-center text-center glow-hover relative overflow-hidden group grow min-h-[300px]">
-            <div className="upload-scan" />
+        <div className="w-full max-w-4xl mx-auto mb-10">
+            <label
+                onDragOver={(e) => { e.preventDefault(); setIsDragging(true); }}
+                onDragLeave={() => setIsDragging(false)}
+                onDrop={(e) => { e.preventDefault(); setIsDragging(false); handleFile(e.dataTransfer.files[0]); }}
+                className={twMerge(
+                    "glass-card flex flex-col items-center text-center cursor-pointer group",
+                    isDragging && "bg-white/70 scale-[0.99] border-rose-200"
+                )}
+            >
+                <div className="w-20 h-20 bg-rose-50 rounded-[2rem] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-700 shadow-sm relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-rose-400/10 to-transparent" />
+                    <CloudRain className="w-10 h-10 text-rose-400 relative z-10" strokeWidth={1.5} />
+                </div>
 
-            <div className="mb-8 w-24 h-24 bg-white/[0.03] rounded-3xl flex items-center justify-center border border-white/5 group-hover:bg-violet-600/10 group-hover:border-violet-500/30 transition-all duration-500 shadow-xl">
-                <FileCode2 className="w-12 h-12 text-gray-500 group-hover:text-violet-400 group-hover:scale-110 transition-all duration-500" strokeWidth={1} />
-            </div>
+                <div className="space-y-2">
+                    <h3 className="text-2xl font-black text-slate-800 tracking-tight">
+                        {selectedFile ? 'Document Ready' : 'Load your Document'}
+                    </h3>
+                    <p className="text-sm font-medium text-slate-400 max-w-[240px] leading-relaxed mx-auto">
+                        {selectedFile ? `Analyzing: ${selectedFile.name}` : 'Drop your PDF here to initiate the semantic flow.'}
+                    </p>
+                </div>
 
-            <div className="space-y-2">
-                <h3 className="text-xl font-bold space-font tracking-tight">Protocol: Data Ingest</h3>
-                <p className="text-xs text-gray-500 max-w-[200px] leading-relaxed mx-auto">
-                    {selectedFile ? `Encrypted payload: ${selectedFile.name}` : 'Awaiting encrypted PDF stream for multi-vector indexing.'}
-                </p>
-            </div>
-
-            <label className="w-full mt-10">
                 <input
                     type="file" className="hidden" accept=".pdf"
                     onChange={(e) => handleFile(e.target.files[0])}
                 />
-                <div className="py-4 bg-white/5 border border-white/10 rounded-2xl text-[11px] font-black uppercase tracking-[0.2em] cursor-pointer hover:bg-violet-600 hover:text-white transition-all shadow-lg active:scale-95">
-                    {selectedFile ? 'Swap Payload' : 'Upload Payload'}
+
+                <div className="mt-10 px-8 py-3 bg-slate-800 text-white rounded-full text-xs font-black uppercase tracking-widest hover:bg-slate-900 hover:scale-105 transition-all shadow-xl active:scale-95">
+                    {selectedFile ? 'Swap Payload' : 'Begin Ingest'}
                 </div>
             </label>
         </div>

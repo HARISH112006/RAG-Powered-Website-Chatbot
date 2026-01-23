@@ -4,93 +4,52 @@
 
 @layer base {
     :root {
-        --bg-deep: #030305;
-        --accent-primary: #8b5cf6;
-        --accent-secondary: #06b6d4;
-        --glass-border: rgba(255, 255, 255, 0.05);
+        --glass-bg: rgba(255, 255, 255, 0.45);
+        --glass-border: rgba(255, 255, 255, 0.6);
     }
 
     body {
-        @apply bg-[#030305] text-slate-100 antialiased overflow-hidden;
-        font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+        @apply antialiased text-slate-700 selection:bg-rose-100 selection:text-rose-900;
+        font-family: 'Outfit', system-ui, sans-serif;
+        background: radial-gradient(circle at 10% 20%, rgba(255, 228, 230, 0.5) 0%, transparent 40%),
+            radial-gradient(circle at 90% 80%, rgba(224, 231, 255, 0.5) 0%, transparent 40%),
+            radial-gradient(circle at 50% 50%, rgba(236, 253, 245, 0.4) 0%, transparent 50%),
+            #f8fafc;
+    }
+}
+
+@layer components {
+    .soft-glass {
+        @apply bg-white/45 backdrop-blur-[20px] border border-white/60;
+        box-shadow: 0 8px 32px 0 rgba(100, 116, 139, 0.08);
+    }
+
+    .glass-card {
+        @apply soft-glass rounded-[40px] p-10 transition-all duration-500;
+    }
+
+    .glass-card:hover {
+        @apply bg-white/60 border-white/80 -translate-y-1;
+        box-shadow: 0 20px 40px -10px rgba(100, 116, 139, 0.12);
     }
 }
 
 @layer utilities {
-    .space-font {
-        font-family: 'Space Grotesk', sans-serif;
+    .gradient-text {
+        @apply bg-clip-text text-transparent bg-gradient-to-br from-rose-500 via-purple-500 to-indigo-600;
     }
 
-    /* Atmospheric Scanlines */
-    .scanlines::before {
+    .pulse-online {
+        @apply relative flex h-3 w-3;
+    }
+
+    .pulse-online::after {
         content: "";
-        position: fixed;
-        inset: 0;
-        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.2) 50%),
-            linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 255, 0, 0.03));
-        background-size: 100% 4px, 3px 100%;
-        pointer-events: none;
-        z-index: 50;
-        opacity: 0.15;
+        @apply absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75;
     }
 
-    /* Glassmorphism V3 */
-    .glass-panel {
-        @apply bg-[#08080c]/70 backdrop-blur-[30px] border border-white/5;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    }
-
-    /* Neural Background */
-    .neural-bg {
-        @apply fixed inset-0 -z-20;
-        background: radial-gradient(circle at 5% 5%, rgba(139, 92, 246, 0.08) 0%, transparent 40%),
-            radial-gradient(circle at 95% 95%, rgba(6, 182, 212, 0.06) 0%, transparent 40%);
-    }
-
-    /* Reactive Core Orb */
-    .neural-core {
-        @apply absolute -top-[50px] -right-[50px] w-[150px] h-[150px] opacity-20 pointer-events-none;
-        background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);
-        filter: blur(40px);
-        animation: core-drift 10s infinite ease-in-out;
-    }
-
-    @keyframes core-drift {
-
-        0%,
-        100% {
-            transform: translate(0, 0) scale(1);
-        }
-
-        50% {
-            transform: translate(-20px, 20px) scale(1.2);
-        }
-    }
-
-    /* Scan Animation */
-    .upload-scan {
-        @apply absolute top-0 left-0 w-full h-[2px] opacity-30 pointer-events-none;
-        background: linear-gradient(to right, transparent, #06b6d4, transparent);
-        animation: scan-line 4s infinite linear;
-    }
-
-    @keyframes scan-line {
-        0% {
-            transform: translateY(-100%);
-        }
-
-        100% {
-            transform: translateY(800%);
-        }
-    }
-
-    /* Glow Hover */
-    .glow-hover {
-        @apply transition-all duration-500 ease-out;
-    }
-
-    .glow-hover:hover {
-        @apply border-violet-500/30 ring-1 ring-violet-500/10;
-        box-shadow: 0 0 30px rgba(139, 92, 246, 0.15);
+    .pulse-online::before {
+        content: "";
+        @apply relative inline-flex h-3 w-3 rounded-full bg-emerald-500;
     }
 }

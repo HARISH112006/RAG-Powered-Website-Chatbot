@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { Zap } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 
 /**
- * Cyber-Luxe V3 Input: Terminal-style query command with reactive glowing orbit.
+ * Glassmorphic Flow Input: Rounded, floating input bar with soft shadows.
  */
 export function QuestionSection({ onSendMessage, isLoading }) {
     const [query, setQuery] = useState('');
@@ -16,30 +16,26 @@ export function QuestionSection({ onSendMessage, isLoading }) {
     };
 
     return (
-        <div className="mt-8 relative shrink-0">
-            <div className="absolute -inset-1 bg-gradient-to-r from-violet-600 to-cyan-500 rounded-3xl blur-xl opacity-10" />
-
-            <form onSubmit={handleSubmit} className="relative bg-black/60 border border-white/10 rounded-3xl p-3 flex items-center gap-3 active:border-violet-500/30 transition-colors">
+        <div className="w-full max-w-2xl mx-auto mt-12 pb-10">
+            <form onSubmit={handleSubmit} className="soft-glass rounded-[30px] p-2 flex items-center shadow-2xl group transition-all duration-500 focus-within:bg-white/60">
                 <input
                     type="text"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
-                    placeholder="Execute query command..."
+                    placeholder="Tell me something..."
                     disabled={isLoading}
-                    className="bg-transparent flex-1 px-5 text-sm text-white focus:outline-none placeholder:text-gray-700 font-medium"
+                    className="flex-1 bg-transparent px-8 text-base text-slate-700 placeholder:text-slate-300 focus:outline-none font-medium"
                 />
                 <button
                     disabled={!query.trim() || isLoading}
-                    className="bg-violet-600 text-white w-14 h-14 rounded-2xl flex items-center justify-center shadow-2xl hover:bg-violet-500 transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed group"
+                    className="bg-slate-800 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-slate-900 transition-all active:scale-95 disabled:opacity-20 disabled:cursor-not-allowed"
                 >
-                    <Zap className={`w-6 h-6 transition-transform ${isLoading ? 'animate-spin' : 'group-hover:rotate-12'}`} strokeWidth={2} />
+                    <ArrowUp className={`w-6 h-6 transition-transform ${isLoading ? 'animate-pulse' : 'hover:-translate-y-1'}`} strokeWidth={3} />
                 </button>
             </form>
-
-            <div className="flex justify-between items-center px-6 mt-4 opacity-30">
-                <span className="text-[8px] font-black uppercase tracking-[0.3em]">Encrypted Tunnel: Secured</span>
-                <span className="text-[8px] font-black uppercase tracking-[0.3em]">Neural core: v3.0</span>
-            </div>
+            <p className="text-center text-[10px] font-black uppercase tracking-[0.4em] text-slate-300 mt-8">
+                Powered by Flow Neural Engine
+            </p>
         </div>
     );
 }

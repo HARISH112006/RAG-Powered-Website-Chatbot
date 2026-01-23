@@ -1,23 +1,24 @@
-import { FlaskConical } from 'lucide-react';
+import { Radio } from 'lucide-react';
 
 /**
- * Cyber-Luxe V3 Header: Features the "Neural Keeper" branding and drifting core orb.
+ * Glassmorphic Flow Header: Features a soft branding experience with high-end typography.
  */
 export function Header() {
     return (
-        <div className="glass-panel rounded-[2.5rem] p-10 flex flex-col items-start gap-6 relative overflow-hidden shrink-0">
-            <div className="neural-core" />
-            <div className="w-16 h-16 bg-white/5 rounded-3xl flex items-center justify-center border border-white/10 shadow-inner">
-                <FlaskConical className="w-10 h-10 text-violet-500" strokeWidth={1.5} />
+        <header className="flex flex-col items-center justify-center text-center space-y-4 mb-12">
+            <div className="w-16 h-16 bg-white rounded-3xl flex items-center justify-center shadow-2xl relative overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-tr from-rose-100 to-indigo-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <Radio className="w-8 h-8 text-rose-500 relative z-10" strokeWidth={2.5} />
             </div>
             <div className="space-y-1">
-                <h1 className="text-3xl font-black space-font tracking-tighter uppercase leading-none">
-                    NEURAL<br /><span className="text-violet-500">KEEPER</span>
+                <h1 className="text-4xl font-black tracking-tight text-slate-800">
+                    RAG<span className="gradient-text italic px-1">Flow</span>
                 </h1>
-                <p className="text-[9px] font-bold uppercase tracking-[0.4em] text-gray-400 mt-2">
-                    Autonomous RAG System
-                </p>
+                <div className="flex items-center justify-center gap-2">
+                    <span className="pulse-online" />
+                    <span className="text-[10px] font-extrabold uppercase tracking-[0.3em] text-slate-400">Processing Core Active</span>
+                </div>
             </div>
-        </div>
+        </header>
     );
 }

@@ -1,28 +1,27 @@
-import { Terminal } from 'lucide-react';
+import { Stars } from 'lucide-react';
 
 /**
- * Cyber-Luxe V3 Answer: Cinematic conversation stream with technical taxonomy.
+ * Glassmorphic Flow Answer: Light, airy conversational stream.
  */
 export function AnswerSection({ answer, isLoading }) {
     if (!answer && !isLoading) return null;
 
     return (
-        <div className="flex-1 overflow-y-auto space-y-12 pr-4 custom-scrollbar">
-            <div className="flex flex-col gap-4 animate-in fade-in slide-in-from-left-4 duration-700">
-                <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-violet-500 rounded-full animate-pulse" />
-                    <span className="text-[9px] font-bold uppercase tracking-widest text-violet-400">System_C01_Response</span>
+        <div className="w-full space-y-10 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+            <div className="flex flex-col items-center text-center space-y-6">
+                <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg border border-white/60">
+                    <Stars className="w-6 h-6 text-purple-400" strokeWidth={2} />
                 </div>
 
-                <div className="p-8 bg-white/[0.02] border border-white/5 rounded-[2rem] max-w-[90%] leading-relaxed text-gray-300 text-sm shadow-2xl">
+                <div className="soft-glass rounded-[40px] p-10 max-w-3xl leading-relaxed text-slate-600 text-lg font-medium shadow-[0_30px_60px_-15px_rgba(100,116,139,0.1)] border-white/80">
                     {isLoading ? (
-                        <div className="flex gap-2">
-                            <span className="w-1 h-1 bg-violet-500/50 rounded-full animate-bounce" />
-                            <span className="w-1 h-1 bg-violet-500/50 rounded-full animate-bounce [animation-delay:0.2s]" />
-                            <span className="w-1 h-1 bg-violet-500/50 rounded-full animate-bounce [animation-delay:0.4s]" />
+                        <div className="flex justify-center items-center space-x-2 py-4">
+                            <div className="w-2 h-2 bg-rose-300 rounded-full animate-bounce [animation-duration:1s]" />
+                            <div className="w-2 h-2 bg-purple-300 rounded-full animate-bounce [animation-duration:1s] [animation-delay:0.2s]" />
+                            <div className="w-2 h-2 bg-indigo-300 rounded-full animate-bounce [animation-duration:1s] [animation-delay:0.4s]" />
                         </div>
                     ) : (
-                        <p>{answer}</p>
+                        <p className="italic">"{answer}"</p>
                     )}
                 </div>
             </div>
