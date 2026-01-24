@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+python-dotenv
+langchain
+langchain-openai
+langchain-community
+openai
+faiss-cpu
+pypdf
+beautifulsoup4
+requests
+python-multipart
+pydantic
+tiktoken
+langchain-text-splitters
+chromadb
