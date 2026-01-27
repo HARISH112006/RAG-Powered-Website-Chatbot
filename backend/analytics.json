@@ -1,0 +1,1783 @@
+[
+  {
+    "timestamp": "2026-01-24 13:27:14.100408",
+    "type": "upload",
+    "data": {
+      "filename": "text_input",
+      "file_size": 448,
+      "chunks_created": 1,
+      "success": true
+    },
+    "session_id": "d7bf60cb-f8db-4b08-8007-5cdbec260f8e"
+  },
+  {
+    "timestamp": "2026-01-24 13:27:17.383650",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence?",
+      "answer_length": 353,
+      "confidence_score": 0.0,
+      "processing_time_ms": 53,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "5c952926-ccd1-41ee-92f2-31d6bd6b4f01"
+  },
+  {
+    "timestamp": "2026-01-24 13:27:20.519645",
+    "type": "query",
+    "data": {
+      "question": "What is AI?",
+      "answer_length": 353,
+      "confidence_score": 0.0,
+      "processing_time_ms": 52,
+      "language": "es",
+      "success": true
+    },
+    "session_id": "7168987a-1611-443f-aa1d-0d9c24bc9b16"
+  },
+  {
+    "timestamp": "2026-01-24 13:28:27.473209",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence?",
+      "answer_length": 353,
+      "confidence_score": 0.0,
+      "processing_time_ms": 311,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "f21d1587-d59f-4434-9054-a7eb556a91b0"
+  },
+  {
+    "timestamp": "2026-01-24 13:28:56.571599",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence?",
+      "answer_length": 1239,
+      "confidence_score": 0.15,
+      "processing_time_ms": 623,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "ef3d20e2-8923-4c6c-b6da-16c146cf5419"
+  },
+  {
+    "timestamp": "2026-01-24 13:31:53.379969",
+    "type": "upload",
+    "data": {
+      "filename": "text_input",
+      "file_size": 54,
+      "chunks_created": 1,
+      "success": true
+    },
+    "session_id": "65d1e781-d5e9-4092-9411-6cbd4f677d43"
+  },
+  {
+    "timestamp": "2026-01-24 13:33:32.040680",
+    "type": "upload",
+    "data": {
+      "filename": "Class_11_Physics_English_Medium-Volume_1-2024_Edition-www.tntextbooks.in.pdf",
+      "file_size": 48288534,
+      "chunks_created": 842,
+      "success": true
+    },
+    "session_id": "12aa84a5-e39b-4f20-9df6-39c2d1d5c6bc"
+  },
+  {
+    "timestamp": "2026-01-24 13:33:44.755721",
+    "type": "query",
+    "data": {
+      "question": "Can you summarize the key findings?",
+      "answer_length": 1270,
+      "confidence_score": 0.02,
+      "processing_time_ms": 467,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "e6eff526-3cbf-4124-b87f-697fa5d26715"
+  },
+  {
+    "timestamp": "2026-01-24 13:34:03.005588",
+    "type": "query",
+    "data": {
+      "question": "moment of inertia",
+      "answer_length": 2192,
+      "confidence_score": 0.54,
+      "processing_time_ms": 775,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "b7d1faee-2c25-46bb-a1f7-ca3d72c0d764"
+  },
+  {
+    "timestamp": "2026-01-24 13:34:33.592039",
+    "type": "query",
+    "data": {
+      "question": "moment of inertia",
+      "answer_length": 2220,
+      "confidence_score": 0.54,
+      "processing_time_ms": 797,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "1b97f1c4-b4bc-4147-8129-63ecde2f4972"
+  },
+  {
+    "timestamp": "2026-01-24 13:35:39.860365",
+    "type": "upload",
+    "data": {
+      "filename": "https://en.wikipedia.org/wiki/MS_Dhoni",
+      "file_size": 38,
+      "chunks_created": 114,
+      "success": true
+    },
+    "session_id": "7319d602-5a4c-4722-8c51-02439bad281d"
+  },
+  {
+    "timestamp": "2026-01-24 13:35:47.855495",
+    "type": "query",
+    "data": {
+      "question": "What are the main topics covered in this document?",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "f7ed0053-3672-4f27-8850-969a0fb7556c"
+  },
+  {
+    "timestamp": "2026-01-24 13:36:06.979834",
+    "type": "query",
+    "data": {
+      "question": "Can you summarize the key findings?",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "cc8ab3ad-9975-4193-9c69-575e044b6e84"
+  },
+  {
+    "timestamp": "2026-01-24 13:36:46.684384",
+    "type": "query",
+    "data": {
+      "question": "who is dhoni",
+      "answer_length": 1534,
+      "confidence_score": 0.58,
+      "processing_time_ms": 28496,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "bc62ca5b-4aa9-43cb-af31-6e246de8ef01"
+  },
+  {
+    "timestamp": "2026-01-24 13:40:25.872197",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence?",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "e7a10a11-4fe2-428d-907c-2db7c06aa6e9"
+  },
+  {
+    "timestamp": "2026-01-26 11:13:13.197668",
+    "type": "upload",
+    "data": {
+      "filename": "Class_11_Physics_English_Medium-Volume_1-2024_Edition-www.tntextbooks.in.pdf",
+      "file_size": 48288534,
+      "chunks_created": 842,
+      "success": true
+    },
+    "session_id": "dc4d8c1b-8329-456b-b4a3-56b3ea324d20"
+  },
+  {
+    "timestamp": "2026-01-26 11:13:26.177524",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 2679,
+      "confidence_score": 0.35,
+      "processing_time_ms": 1164,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "c15aea3d-250b-4a61-99f3-d2203b299181"
+  },
+  {
+    "timestamp": "2026-01-26 11:13:50.938667",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 3544,
+      "confidence_score": 0.35,
+      "processing_time_ms": 1135,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "821d794f-b99d-4334-b1c3-40722644264e"
+  },
+  {
+    "timestamp": "2026-01-26 11:14:26.690078",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 1905,
+      "confidence_score": 0.35,
+      "processing_time_ms": 1131,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "808fa954-a1bd-481f-a141-d59a92fbd4b1"
+  },
+  {
+    "timestamp": "2026-01-26 11:16:17.416052",
+    "type": "query",
+    "data": {
+      "question": "What are the main topics covered in this document?",
+      "answer_length": 72,
+      "confidence_score": 0.0,
+      "processing_time_ms": 14529,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "20b9b016-6591-436e-a0bf-23223d4f0e94"
+  },
+  {
+    "timestamp": "2026-01-26 11:18:57.027838",
+    "type": "query",
+    "data": {
+      "question": "moment of inertia",
+      "answer_length": 2898,
+      "confidence_score": 0.54,
+      "processing_time_ms": 1376,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "915a97a0-1c19-4247-bdeb-365a9916fdb5"
+  },
+  {
+    "timestamp": "2026-01-26 11:27:29.706031",
+    "type": "upload",
+    "data": {
+      "filename": "text_input",
+      "file_size": 707,
+      "chunks_created": 1,
+      "success": true
+    },
+    "session_id": "5f43f0d3-9cf5-4d98-a739-44cd573fd9f0"
+  },
+  {
+    "timestamp": "2026-01-26 11:27:32.280232",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence and how does it work?",
+      "answer_length": 1313,
+      "confidence_score": 0.13,
+      "processing_time_ms": 518,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "0dccb3e4-ac3f-4f6d-8958-f89f78921a23"
+  },
+  {
+    "timestamp": "2026-01-26 11:27:35.466732",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence and how does it work?",
+      "answer_length": 3459,
+      "confidence_score": 0.13,
+      "processing_time_ms": 1127,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "ff2c507d-025f-45b6-9f78-88ba51f4c544"
+  },
+  {
+    "timestamp": "2026-01-26 11:27:38.361623",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence and how does it work?",
+      "answer_length": 1678,
+      "confidence_score": 0.13,
+      "processing_time_ms": 838,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "cbc7f6fa-abc3-4a00-99ff-4c28ffc5d55c"
+  },
+  {
+    "timestamp": "2026-01-26 11:30:23.225447",
+    "type": "upload",
+    "data": {
+      "filename": "Class_11_Physics_English_Medium-Volume_1-2024_Edition-www.tntextbooks.in.pdf",
+      "file_size": 48288534,
+      "chunks_created": 842,
+      "success": true
+    },
+    "session_id": "52898d35-815a-4f38-8d88-2d1f446dc625"
+  },
+  {
+    "timestamp": "2026-01-26 11:33:17.726911",
+    "type": "query",
+    "data": {
+      "question": "vandegraff generator",
+      "answer_length": 1270,
+      "confidence_score": 0.03,
+      "processing_time_ms": 744,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "6d2b2fb4-6c29-42c9-ad3a-2aaa23d8c128"
+  },
+  {
+    "timestamp": "2026-01-26 11:34:02.003783",
+    "type": "query",
+    "data": {
+      "question": "moment of inertia",
+      "answer_length": 2385,
+      "confidence_score": 0.54,
+      "processing_time_ms": 1364,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "2843c1d1-7da3-47f4-93d9-6c9b2591a378"
+  },
+  {
+    "timestamp": "2026-01-26 11:34:32.402173",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 1574,
+      "confidence_score": 0.35,
+      "processing_time_ms": 984,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "7fcb5491-5a02-45c9-8028-7b5ae5352fbd"
+  },
+  {
+    "timestamp": "2026-01-26 12:41:09.597649",
+    "type": "upload",
+    "data": {
+      "filename": "text_input",
+      "file_size": 707,
+      "chunks_created": 1,
+      "success": true
+    },
+    "session_id": "eda1b551-1cf2-4bab-80df-07e226e2073e"
+  },
+  {
+    "timestamp": "2026-01-26 12:41:12.380266",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence and how does it work?",
+      "answer_length": 2056,
+      "confidence_score": 0.13,
+      "processing_time_ms": 725,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "93b71c97-e184-4ca4-9a09-0f1985f2d8fc"
+  },
+  {
+    "timestamp": "2026-01-26 12:41:15.812522",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence and how does it work?",
+      "answer_length": 4215,
+      "confidence_score": 0.13,
+      "processing_time_ms": 1377,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "7c3c56b1-ed19-4aa1-87a5-89ee46f401e2"
+  },
+  {
+    "timestamp": "2026-01-26 12:41:18.911227",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence and how does it work?",
+      "answer_length": 2418,
+      "confidence_score": 0.13,
+      "processing_time_ms": 1031,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "c9e6e3c1-6c10-4842-a69b-968f1b05b794"
+  },
+  {
+    "timestamp": "2026-01-26 13:42:09.050973",
+    "type": "upload",
+    "data": {
+      "filename": "Class_11_Physics_English_Medium-Volume_1-2024_Edition-www.tntextbooks.in.pdf",
+      "file_size": 48288534,
+      "chunks_created": 842,
+      "success": true
+    },
+    "session_id": "9c83fc9a-c945-4879-ac4d-6db326a10e6e"
+  },
+  {
+    "timestamp": "2026-01-26 13:42:20.993341",
+    "type": "query",
+    "data": {
+      "question": "phuysics",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "d9f332a3-11f7-4b2c-9d2a-90119cba7ebb"
+  },
+  {
+    "timestamp": "2026-01-26 13:42:41.595220",
+    "type": "query",
+    "data": {
+      "question": "moment of inertia",
+      "answer_length": 1788,
+      "confidence_score": 0.54,
+      "processing_time_ms": 978,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "9e6eecde-d00f-4d1b-9b85-b9e8f3d6060f"
+  },
+  {
+    "timestamp": "2026-01-26 13:48:19.515898",
+    "type": "upload",
+    "data": {
+      "filename": "Class_11_Physics_English_Medium-Volume_1-2024_Edition-www.tntextbooks.in.pdf",
+      "file_size": 48288534,
+      "chunks_created": 842,
+      "success": true
+    },
+    "session_id": "7402059f-30ec-44c4-bf9f-c8e9bbf385cd"
+  },
+  {
+    "timestamp": "2026-01-26 13:49:46.753667",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 2426,
+      "confidence_score": 0.35,
+      "processing_time_ms": 1095,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "cc9999eb-cf83-4448-965d-ef579265c640"
+  },
+  {
+    "timestamp": "2026-01-26 13:55:18.148398",
+    "type": "upload",
+    "data": {
+      "filename": "Class_11_Physics_English_Medium-Volume_1-2024_Edition-www.tntextbooks.in.pdf",
+      "file_size": 48288534,
+      "chunks_created": 842,
+      "success": true
+    },
+    "session_id": "f9064dc0-8130-41f0-b7d1-c7801beeaa03"
+  },
+  {
+    "timestamp": "2026-01-26 13:55:25.248188",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 2083,
+      "confidence_score": 0.35,
+      "processing_time_ms": 936,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "2b0ad598-e94f-450e-86e1-71b3557d3b47"
+  },
+  {
+    "timestamp": "2026-01-26 13:55:41.864775",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 3519,
+      "confidence_score": 0.35,
+      "processing_time_ms": 1533,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "583cc872-926c-4893-9d86-ce6b68b38955"
+  },
+  {
+    "timestamp": "2026-01-26 13:55:54.833869",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 2073,
+      "confidence_score": 0.35,
+      "processing_time_ms": 895,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "6c94a741-d8eb-4f9c-ba23-23dba3c056e2"
+  },
+  {
+    "timestamp": "2026-01-26 13:56:05.788369",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 3208,
+      "confidence_score": 0.35,
+      "processing_time_ms": 1210,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "dbc0c2e6-a00b-4166-8b03-4aef322eeaea"
+  },
+  {
+    "timestamp": "2026-01-26 14:12:30.879243",
+    "type": "upload",
+    "data": {
+      "filename": "Class_11_Physics_English_Medium-Volume_1-2024_Edition-www.tntextbooks.in.pdf",
+      "file_size": 48288534,
+      "chunks_created": 842,
+      "success": true
+    },
+    "session_id": "b1daab21-df83-476f-ac84-c56ede3aa5c9"
+  },
+  {
+    "timestamp": "2026-01-26 14:13:19.732283",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 2614,
+      "confidence_score": 0.35,
+      "processing_time_ms": 1016,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "57f3dc9e-81a5-432e-953a-142a6697e318"
+  },
+  {
+    "timestamp": "2026-01-26 14:14:52.761887",
+    "type": "upload",
+    "data": {
+      "filename": "text_input",
+      "file_size": 707,
+      "chunks_created": 1,
+      "success": true
+    },
+    "session_id": "6aee8ba0-8099-4098-adf0-9b550d42c494"
+  },
+  {
+    "timestamp": "2026-01-26 14:14:55.464260",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence and how does it work?",
+      "answer_length": 1800,
+      "confidence_score": 0.13,
+      "processing_time_ms": 613,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "169e2825-99e8-4a8e-bfea-b3d19b04993c"
+  },
+  {
+    "timestamp": "2026-01-26 14:14:58.647521",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence and how does it work?",
+      "answer_length": 3791,
+      "confidence_score": 0.13,
+      "processing_time_ms": 1075,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "57bc9394-f960-4e96-a951-3cfe5fd61425"
+  },
+  {
+    "timestamp": "2026-01-26 14:15:01.458720",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence and how does it work?",
+      "answer_length": 2043,
+      "confidence_score": 0.13,
+      "processing_time_ms": 697,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "829fdf15-837b-4bf2-978e-e66ed837a384"
+  },
+  {
+    "timestamp": "2026-01-26 14:17:33.732810",
+    "type": "upload",
+    "data": {
+      "filename": "Class_11_Physics_English_Medium-Volume_1-2024_Edition-www.tntextbooks.in.pdf",
+      "file_size": 48288534,
+      "chunks_created": 842,
+      "success": true
+    },
+    "session_id": "c5e96a7f-0acd-4df6-959c-4745000c0d88"
+  },
+  {
+    "timestamp": "2026-01-26 14:18:38.002541",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 2430,
+      "confidence_score": 0.35,
+      "processing_time_ms": 1310,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "0f18f107-7b80-4f32-9efb-a9c4f1c27bf8"
+  },
+  {
+    "timestamp": "2026-01-26 14:18:56.730011",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 3816,
+      "confidence_score": 0.35,
+      "processing_time_ms": 1394,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "5219cf70-8123-47dc-a7d3-6dece1b4f321"
+  },
+  {
+    "timestamp": "2026-01-27 09:13:13.895440",
+    "type": "upload",
+    "data": {
+      "filename": "Class_11_Physics_English_Medium-Volume_1-2024_Edition-www.tntextbooks.in.pdf",
+      "file_size": 48288534,
+      "chunks_created": 842,
+      "success": true
+    },
+    "session_id": "d1768c00-f36e-46a5-a0ba-e74bfbb7ebf5"
+  },
+  {
+    "timestamp": "2026-01-27 09:13:47.849123",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 2308,
+      "confidence_score": 0.35,
+      "processing_time_ms": 801,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "66ca8a67-a366-4594-b2a9-9ea9259e69e8"
+  },
+  {
+    "timestamp": "2026-01-27 09:14:26.197346",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 2143,
+      "confidence_score": 0.35,
+      "processing_time_ms": 720,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "7d40f952-67c1-4c96-8fd8-896c6c9e6613"
+  },
+  {
+    "timestamp": "2026-01-27 09:14:59.227571",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 2217,
+      "confidence_score": 0.35,
+      "processing_time_ms": 1743,
+      "language": "es",
+      "success": true
+    },
+    "session_id": "330a3d63-0cc1-4a4b-b252-b58afc240a3e"
+  },
+  {
+    "timestamp": "2026-01-27 09:15:08.626782",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 1612,
+      "confidence_score": 0.35,
+      "processing_time_ms": 2469,
+      "language": "ko",
+      "success": true
+    },
+    "session_id": "957d0857-23f0-48b3-b253-ea9604c6d8c5"
+  },
+  {
+    "timestamp": "2026-01-27 09:16:14.787604",
+    "type": "upload",
+    "data": {
+      "filename": "https://en.wikipedia.org/wiki/MS_Dhoni",
+      "file_size": 38,
+      "chunks_created": 114,
+      "success": true
+    },
+    "session_id": "a0d5a594-4edd-4286-a1fb-e006cb10d9f9"
+  },
+  {
+    "timestamp": "2026-01-27 09:16:17.560649",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "cf7df0e6-5aa9-48dc-bea4-0a0596ad1841"
+  },
+  {
+    "timestamp": "2026-01-27 09:16:23.170361",
+    "type": "query",
+    "data": {
+      "question": "physics",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "a53393be-822b-4ee4-80c8-5c9009c37e4d"
+  },
+  {
+    "timestamp": "2026-01-27 09:16:39.035287",
+    "type": "upload",
+    "data": {
+      "filename": "https://en.wikipedia.org/wiki/MS_Dhoni",
+      "file_size": 38,
+      "chunks_created": 114,
+      "success": true
+    },
+    "session_id": "559632da-e6c5-46af-aa0d-f20f4c95d212"
+  },
+  {
+    "timestamp": "2026-01-27 09:17:02.629639",
+    "type": "query",
+    "data": {
+      "question": "what is in the url",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "84c5eb94-e0ae-4d3c-9b3c-7a9d8fc31b08"
+  },
+  {
+    "timestamp": "2026-01-27 09:17:13.587467",
+    "type": "query",
+    "data": {
+      "question": "what is in the url",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "bbf1a897-860d-44bf-99db-2b62bf7470af"
+  },
+  {
+    "timestamp": "2026-01-27 09:19:58.699003",
+    "type": "upload",
+    "data": {
+      "filename": "Class_11_Physics_English_Medium-Volume_1-2024_Edition-www.tntextbooks.in.pdf",
+      "file_size": 48288534,
+      "chunks_created": 842,
+      "success": true
+    },
+    "session_id": "84cf1895-70e8-4861-90e4-108fa2d42d42"
+  },
+  {
+    "timestamp": "2026-01-27 09:20:37.780430",
+    "type": "query",
+    "data": {
+      "question": "What are the most important concepts explained?",
+      "answer_length": 3088,
+      "confidence_score": 0.25,
+      "processing_time_ms": 1009,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "f7c871bb-1de4-4cc6-9887-a609e3a854fd"
+  },
+  {
+    "timestamp": "2026-01-27 09:21:19.961246",
+    "type": "query",
+    "data": {
+      "question": "What are the most important concepts explained?",
+      "answer_length": 3254,
+      "confidence_score": 0.25,
+      "processing_time_ms": 1107,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "32e9e3c4-b06b-47d0-a7ba-ad77b14f09d4"
+  },
+  {
+    "timestamp": "2026-01-27 09:21:34.202760",
+    "type": "query",
+    "data": {
+      "question": "What are the most important concepts explained?",
+      "answer_length": 2110,
+      "confidence_score": 0.25,
+      "processing_time_ms": 783,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "15f60d62-7100-45d6-b639-1dbbae2a7e08"
+  },
+  {
+    "timestamp": "2026-01-27 09:23:20.866836",
+    "type": "query",
+    "data": {
+      "question": "What are the most important concepts explained?",
+      "answer_length": 2141,
+      "confidence_score": 0.25,
+      "processing_time_ms": 765,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "569b652f-a5c8-4efd-b872-f05ddcfbd094"
+  },
+  {
+    "timestamp": "2026-01-27 09:23:34.484391",
+    "type": "query",
+    "data": {
+      "question": "moment of inertia",
+      "answer_length": 2356,
+      "confidence_score": 0.54,
+      "processing_time_ms": 986,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "8976ffbe-5df9-487f-bc9a-f444c741bd24"
+  },
+  {
+    "timestamp": "2026-01-27 09:33:18.347170",
+    "type": "query",
+    "data": {
+      "question": "What are the main topics covered in this document?",
+      "answer_length": 1745,
+      "confidence_score": 0.02,
+      "processing_time_ms": 693,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "a5cb75f4-a3ae-41d2-9961-972bc9c566b9"
+  },
+  {
+    "timestamp": "2026-01-27 09:33:54.529765",
+    "type": "query",
+    "data": {
+      "question": "Can you summarize the key findings?",
+      "answer_length": 2051,
+      "confidence_score": 0.02,
+      "processing_time_ms": 753,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "46d612ed-4840-4735-b378-6ba37ecfbcb3"
+  },
+  {
+    "timestamp": "2026-01-27 09:37:33.908400",
+    "type": "upload",
+    "data": {
+      "filename": "Class_11_Physics_English_Medium-Volume_1-2024_Edition-www.tntextbooks.in.pdf",
+      "file_size": 48288534,
+      "chunks_created": 842,
+      "success": true
+    },
+    "session_id": "6fde612e-3e02-4c24-af35-13ca716c922d"
+  },
+  {
+    "timestamp": "2026-01-27 09:37:51.489670",
+    "type": "query",
+    "data": {
+      "question": "What are the main topics covered in this document?",
+      "answer_length": 1702,
+      "confidence_score": 0.02,
+      "processing_time_ms": 728,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "ad7f6824-7f7f-4ba9-bcef-700c88e93744"
+  },
+  {
+    "timestamp": "2026-01-27 09:39:22.734447",
+    "type": "query",
+    "data": {
+      "question": "moment of  inertia",
+      "answer_length": 1946,
+      "confidence_score": 0.54,
+      "processing_time_ms": 891,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "d78451da-31ef-4da7-a154-db3be6359d8d"
+  },
+  {
+    "timestamp": "2026-01-27 09:39:37.477225",
+    "type": "query",
+    "data": {
+      "question": "temple",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "35a400a6-8f93-498d-8998-bb1b1cd1a534"
+  },
+  {
+    "timestamp": "2026-01-27 09:39:54.620583",
+    "type": "query",
+    "data": {
+      "question": "What are the main topics covered in this document?",
+      "answer_length": 1758,
+      "confidence_score": 0.02,
+      "processing_time_ms": 847,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "754d9ad2-4536-4bc1-bdaa-4422cdd8da35"
+  },
+  {
+    "timestamp": "2026-01-27 09:45:11.920529",
+    "type": "upload",
+    "data": {
+      "filename": "Class_12_English_English_Medium-2024_Edition-www.tntextbooks.in_compressed.pdf",
+      "file_size": 23165986,
+      "chunks_created": 666,
+      "success": true
+    },
+    "session_id": "b6c2c3b3-d0bd-46b6-a7de-5c5b9c862d60"
+  },
+  {
+    "timestamp": "2026-01-27 09:45:20.486233",
+    "type": "query",
+    "data": {
+      "question": "What are the main topics covered in this document?",
+      "answer_length": 1818,
+      "confidence_score": 0.25,
+      "processing_time_ms": 747,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "18f6f30a-ed27-4aee-bfd0-05efa6bb1577"
+  },
+  {
+    "timestamp": "2026-01-27 09:46:44.122908",
+    "type": "query",
+    "data": {
+      "question": "What are the most important concepts explained?",
+      "answer_length": 2144,
+      "confidence_score": 0.15,
+      "processing_time_ms": 857,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "0e1b71b0-fa0d-418c-aa6e-356ef22ddc97"
+  },
+  {
+    "timestamp": "2026-01-27 09:47:38.365398",
+    "type": "query",
+    "data": {
+      "question": "the chair",
+      "answer_length": 2122,
+      "confidence_score": 0.29,
+      "processing_time_ms": 977,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "7f7d162d-dad3-461f-a9c5-b2547824f077"
+  },
+  {
+    "timestamp": "2026-01-27 09:48:40.937696",
+    "type": "query",
+    "data": {
+      "question": "the chair",
+      "answer_length": 3441,
+      "confidence_score": 0.29,
+      "processing_time_ms": 1132,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "e11701a7-b03b-47f6-88f8-b30bf9bddf9d"
+  },
+  {
+    "timestamp": "2026-01-27 10:03:06.493705",
+    "type": "upload",
+    "data": {
+      "filename": "Class_12_English_English_Medium-2024_Edition-www.tntextbooks.in_compressed.pdf",
+      "file_size": 23165986,
+      "chunks_created": 666,
+      "success": true
+    },
+    "session_id": "84c703e0-b246-4eaa-9ea6-b874a7b02690"
+  },
+  {
+    "timestamp": "2026-01-27 10:03:30.355022",
+    "type": "query",
+    "data": {
+      "question": "the chair",
+      "answer_length": 2062,
+      "confidence_score": 0.29,
+      "processing_time_ms": 948,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "a2341dc8-9089-4204-ad5a-fa2ed146a2bb"
+  },
+  {
+    "timestamp": "2026-01-27 10:03:43.750967",
+    "type": "query",
+    "data": {
+      "question": "the chair",
+      "answer_length": 963,
+      "confidence_score": 0.29,
+      "processing_time_ms": 1921,
+      "language": "ja",
+      "success": true
+    },
+    "session_id": "b673160b-5dca-4f24-977d-8f4a1a4fb96f"
+  },
+  {
+    "timestamp": "2026-01-27 10:07:49.146571",
+    "type": "upload",
+    "data": {
+      "filename": "Class_11_Physics_English_Medium-Volume_1-2024_Edition-www.tntextbooks.in.pdf",
+      "file_size": 48288534,
+      "chunks_created": 842,
+      "success": true
+    },
+    "session_id": "3fa72720-2f3b-4b14-a4ba-31bbecee4472"
+  },
+  {
+    "timestamp": "2026-01-27 10:09:33.220279",
+    "type": "query",
+    "data": {
+      "question": "What are the most important concepts explained?",
+      "answer_length": 2237,
+      "confidence_score": 0.25,
+      "processing_time_ms": 876,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "2d542828-70db-433b-802c-192267322719"
+  },
+  {
+    "timestamp": "2026-01-27 10:47:48.586739",
+    "type": "upload",
+    "data": {
+      "filename": "https://en.wikipedia.org/wiki/MS_Dhoni",
+      "file_size": 38,
+      "chunks_created": 117,
+      "success": true
+    },
+    "session_id": "300d9c04-3724-46ac-825e-fac0de48bf24"
+  },
+  {
+    "timestamp": "2026-01-27 10:47:57.133988",
+    "type": "query",
+    "data": {
+      "question": "What are the main topics covered in this document?",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "8cb23fd1-3b2e-48c7-9b01-5d719e9956e6"
+  },
+  {
+    "timestamp": "2026-01-27 10:48:08.866757",
+    "type": "query",
+    "data": {
+      "question": "What are the most important concepts explained?",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "48ba1937-a9c8-4d4d-990a-1939307721aa"
+  },
+  {
+    "timestamp": "2026-01-27 10:48:20.612590",
+    "type": "query",
+    "data": {
+      "question": "when he us born",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "d7983a93-6954-42e9-a275-506a0c0ed201"
+  },
+  {
+    "timestamp": "2026-01-27 11:02:54.096231",
+    "type": "upload",
+    "data": {
+      "filename": "text_input",
+      "file_size": 97,
+      "chunks_created": 1,
+      "success": true
+    },
+    "session_id": "c886dd08-f1cf-4b5b-971d-76390b5e3772"
+  },
+  {
+    "timestamp": "2026-01-27 11:02:56.841283",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence?",
+      "answer_length": 1747,
+      "confidence_score": 0.15,
+      "processing_time_ms": 673,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "6c979c27-ad32-4292-91da-c152a493e864"
+  },
+  {
+    "timestamp": "2026-01-27 11:13:41.767828",
+    "type": "upload",
+    "data": {
+      "filename": "text_input",
+      "file_size": 622,
+      "chunks_created": 1,
+      "success": true
+    },
+    "session_id": "a7c202b9-a6ff-4e36-b372-9d9e4f8f75a2"
+  },
+  {
+    "timestamp": "2026-01-27 11:13:45.811384",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence?",
+      "answer_length": 1955,
+      "confidence_score": 0.15,
+      "processing_time_ms": 965,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "7db15c01-5c5c-4f9c-b8fe-78c37377c3dc"
+  },
+  {
+    "timestamp": "2026-01-27 11:13:49.406572",
+    "type": "query",
+    "data": {
+      "question": "How does machine learning work?",
+      "answer_length": 4610,
+      "confidence_score": 0.07,
+      "processing_time_ms": 1498,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "c2fd5dad-2735-4d15-96e5-d82afde1bf6a"
+  },
+  {
+    "timestamp": "2026-01-27 11:21:52.699351",
+    "type": "upload",
+    "data": {
+      "filename": "text_input",
+      "file_size": 54,
+      "chunks_created": 1,
+      "success": true
+    },
+    "session_id": "b6f15403-735a-4adc-8a67-17c4ade94a2f"
+  },
+  {
+    "timestamp": "2026-01-27 11:28:58.353115",
+    "type": "upload",
+    "data": {
+      "filename": "Class_11_Physics_English_Medium-Volume_1-2024_Edition-www.tntextbooks.in.pdf",
+      "file_size": 48288534,
+      "chunks_created": 842,
+      "success": true
+    },
+    "session_id": "022a8166-cd4d-4f00-b687-bfbb5bcc2199"
+  },
+  {
+    "timestamp": "2026-01-27 11:29:06.284705",
+    "type": "query",
+    "data": {
+      "question": "What are the main topics covered in this document?",
+      "answer_length": 2126,
+      "confidence_score": 0.02,
+      "processing_time_ms": 953,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "9d56507a-e931-47a4-8322-d70877e8fc0a"
+  },
+  {
+    "timestamp": "2026-01-27 11:29:26.679661",
+    "type": "query",
+    "data": {
+      "question": "What are the most important concepts explained?",
+      "answer_length": 2755,
+      "confidence_score": 0.25,
+      "processing_time_ms": 845,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "d4b78668-049d-4447-b83b-7c27bfa638ab"
+  },
+  {
+    "timestamp": "2026-01-27 11:31:32.272160",
+    "type": "upload",
+    "data": {
+      "filename": "text_input",
+      "file_size": 170,
+      "chunks_created": 1,
+      "success": true
+    },
+    "session_id": "0eff24bb-e8bd-4e67-bdbd-6ada9b7629cb"
+  },
+  {
+    "timestamp": "2026-01-27 11:31:35.291048",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence?",
+      "answer_length": 2050,
+      "confidence_score": 0.16,
+      "processing_time_ms": 980,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "e17d814e-f0a8-4377-89f6-2730c6cf9adc"
+  },
+  {
+    "timestamp": "2026-01-27 11:31:38.575108",
+    "type": "query",
+    "data": {
+      "question": "What is artificial intelligence?",
+      "answer_length": 4607,
+      "confidence_score": 0.16,
+      "processing_time_ms": 1240,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "e4b9e3a0-b47c-401a-a43f-fd2ea3cf36cf"
+  },
+  {
+    "timestamp": "2026-01-27 11:33:57.333618",
+    "type": "upload",
+    "data": {
+      "filename": "Class_11_Physics_English_Medium-Volume_1-2024_Edition-www.tntextbooks.in.pdf",
+      "file_size": 48288534,
+      "chunks_created": 842,
+      "success": true
+    },
+    "session_id": "61e84ce9-a4e7-424b-9409-bcdc781c3bc5"
+  },
+  {
+    "timestamp": "2026-01-27 11:34:02.557156",
+    "type": "query",
+    "data": {
+      "question": "What are the main topics covered in this document?",
+      "answer_length": 2007,
+      "confidence_score": 0.02,
+      "processing_time_ms": 690,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "5a69cb38-cdb7-4d4e-bfc9-aced75e5401b"
+  },
+  {
+    "timestamp": "2026-01-27 11:34:20.973000",
+    "type": "query",
+    "data": {
+      "question": "What are the main topics covered in this document?",
+      "answer_length": 1700,
+      "confidence_score": 0.02,
+      "processing_time_ms": 731,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "6590007f-f086-4708-b7ae-4c06f3a73a6c"
+  },
+  {
+    "timestamp": "2026-01-27 11:39:06.663961",
+    "type": "upload",
+    "data": {
+      "filename": "Class_12_English_English_Medium-2024_Edition-www.tntextbooks.in_compressed.pdf",
+      "file_size": 23165986,
+      "chunks_created": 666,
+      "success": true
+    },
+    "session_id": "8484853a-b587-4831-a8dc-76c3e74e6d91"
+  },
+  {
+    "timestamp": "2026-01-27 11:39:21.038246",
+    "type": "query",
+    "data": {
+      "question": "What are the most important concepts explained?",
+      "answer_length": 2550,
+      "confidence_score": 0.15,
+      "processing_time_ms": 905,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "4f80c282-81b8-4b17-aa61-3c3f04a58373"
+  },
+  {
+    "timestamp": "2026-01-27 11:39:28.206057",
+    "type": "query",
+    "data": {
+      "question": "What are the most important concepts explained?",
+      "answer_length": 1693,
+      "confidence_score": 0.15,
+      "processing_time_ms": 1792,
+      "language": "ru",
+      "success": true
+    },
+    "session_id": "a736ef99-a68f-47c2-9e43-a5661c314e0c"
+  },
+  {
+    "timestamp": "2026-01-27 11:40:34.456282",
+    "type": "upload",
+    "data": {
+      "filename": "https://en.wikipedia.org/wiki/MS_Dhoni",
+      "file_size": 38,
+      "chunks_created": 117,
+      "success": true
+    },
+    "session_id": "6a0aab62-a789-45e1-9702-7bf9f279942d"
+  },
+  {
+    "timestamp": "2026-01-27 11:40:46.015895",
+    "type": "query",
+    "data": {
+      "question": "who is he",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "3935c613-2ca9-4752-9470-3465959b2575"
+  },
+  {
+    "timestamp": "2026-01-27 11:40:52.400872",
+    "type": "query",
+    "data": {
+      "question": "age",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "22d66de4-99f4-4fe1-9e37-bde8cbe1a82a"
+  },
+  {
+    "timestamp": "2026-01-27 11:41:01.761332",
+    "type": "query",
+    "data": {
+      "question": "dhoni",
+      "answer_length": 1918,
+      "confidence_score": 0.56,
+      "processing_time_ms": 881,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "ee58e983-f2a8-4422-8326-831389b8898e"
+  },
+  {
+    "timestamp": "2026-01-27 14:07:36.197500",
+    "type": "upload",
+    "data": {
+      "filename": "text_input",
+      "file_size": 6402,
+      "chunks_created": 8,
+      "success": true
+    },
+    "session_id": "6c5607e5-4e81-47a9-bf28-4160db4ba0e1"
+  },
+  {
+    "timestamp": "2026-01-27 14:08:20.183113",
+    "type": "upload",
+    "data": {
+      "filename": "text_input",
+      "file_size": 6402,
+      "chunks_created": 8,
+      "success": true
+    },
+    "session_id": "22d63fc9-dde9-4ad0-ab36-b8bd77a639b0"
+  },
+  {
+    "timestamp": "2026-01-27 14:08:33.853211",
+    "type": "query",
+    "data": {
+      "question": "when started",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "4bbbc977-4fea-4f89-a16d-d5d5199d4172"
+  },
+  {
+    "timestamp": "2026-01-27 14:08:42.275848",
+    "type": "query",
+    "data": {
+      "question": "google",
+      "answer_length": 2025,
+      "confidence_score": 0.23,
+      "processing_time_ms": 732,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "d4641252-c0f9-49d1-861a-26ca3b0545c5"
+  },
+  {
+    "timestamp": "2026-01-27 14:26:01.070513",
+    "type": "query",
+    "data": {
+      "question": "Can you summarize the key findings?",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "f79e43b3-16c9-45bb-afc3-b119472b5704"
+  },
+  {
+    "timestamp": "2026-01-27 14:40:12.904049",
+    "type": "upload",
+    "data": {
+      "filename": "text_input",
+      "file_size": 174,
+      "chunks_created": 1,
+      "success": true
+    },
+    "session_id": "b7611fe3-e74a-404b-a800-158a3c240688"
+  },
+  {
+    "timestamp": "2026-01-27 14:43:35.391409",
+    "type": "upload",
+    "data": {
+      "filename": "Class_12_English_English_Medium-2024_Edition-www.tntextbooks.in_compressed.pdf",
+      "file_size": 23165986,
+      "chunks_created": 666,
+      "success": true
+    },
+    "session_id": "122d71d0-b929-41bf-982c-d0f2b6c444e8"
+  },
+  {
+    "timestamp": "2026-01-27 14:43:43.121608",
+    "type": "query",
+    "data": {
+      "question": "What are the main topics covered in this document?",
+      "answer_length": 1815,
+      "confidence_score": 0.25,
+      "processing_time_ms": 705,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "d6d318ce-b62e-4c06-8cc7-bf37b9f2bd1e"
+  },
+  {
+    "timestamp": "2026-01-27 15:00:30.140915",
+    "type": "upload",
+    "data": {
+      "filename": "text_input",
+      "file_size": 290,
+      "chunks_created": 1,
+      "success": true
+    },
+    "session_id": "ad67a2d1-a5f0-4c5a-8ef8-d75b7b5afe9b"
+  },
+  {
+    "timestamp": "2026-01-27 15:08:28.718426",
+    "type": "upload",
+    "data": {
+      "filename": "Class_12_English_English_Medium-2024_Edition-www.tntextbooks.in_compressed.pdf",
+      "file_size": 23165986,
+      "chunks_created": 666,
+      "success": true
+    },
+    "session_id": "c2a8dd56-4491-4e47-ae5d-42024d006961"
+  },
+  {
+    "timestamp": "2026-01-27 15:09:41.962178",
+    "type": "query",
+    "data": {
+      "question": "What are the most important concepts explained?",
+      "answer_length": 2647,
+      "confidence_score": 0.15,
+      "processing_time_ms": 879,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "a4fa3f28-7196-4b46-833c-1303990c4c6d"
+  },
+  {
+    "timestamp": "2026-01-27 15:10:04.902725",
+    "type": "query",
+    "data": {
+      "question": "Can you summarize the key findings?",
+      "answer_length": 2201,
+      "confidence_score": 0.17,
+      "processing_time_ms": 775,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "905ca871-1cd3-4aea-b306-706d391713fb"
+  },
+  {
+    "timestamp": "2026-01-27 15:26:22.083225",
+    "type": "query",
+    "data": {
+      "question": "What are the key recommendations of the National Curriculum Framework 2005 that the 12th General English syllabus is aligned with?",
+      "answer_length": 2137,
+      "confidence_score": 0.41,
+      "processing_time_ms": 749,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "463d4a91-fb3b-49cb-a28b-6c691d56ee40"
+  },
+  {
+    "timestamp": "2026-01-27 15:26:27.633194",
+    "type": "query",
+    "data": {
+      "question": "How does the textbook aim to develop the 21st Century learner's skills in collaboration, critical thinking, problem-solving, and digital literacy?",
+      "answer_length": 2330,
+      "confidence_score": 0.24,
+      "processing_time_ms": 798,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "cb14d513-0be6-4e8f-863f-a59862cc4d61"
+  },
+  {
+    "timestamp": "2026-01-27 15:26:28.664100",
+    "type": "query",
+    "data": {
+      "question": "How does the textbook aim to develop the 21st Century learner's skills in collaboration, critical thinking, problem-solving, and digital literacy?",
+      "answer_length": 2368,
+      "confidence_score": 0.24,
+      "processing_time_ms": 765,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "065afc2d-64b4-4b5d-b3e6-85c9cb79fa03"
+  },
+  {
+    "timestamp": "2026-01-27 15:26:29.459368",
+    "type": "query",
+    "data": {
+      "question": "How does the textbook aim to develop the 21st Century learner's skills in collaboration, critical thinking, problem-solving, and digital literacy?",
+      "answer_length": 2277,
+      "confidence_score": 0.24,
+      "processing_time_ms": 744,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "256759bd-f561-4406-ac4c-58b8ec67eec5"
+  },
+  {
+    "timestamp": "2026-01-27 15:26:30.261123",
+    "type": "query",
+    "data": {
+      "question": "How does the textbook aim to develop the 21st Century learner's skills in collaboration, critical thinking, problem-solving, and digital literacy?",
+      "answer_length": 2266,
+      "confidence_score": 0.24,
+      "processing_time_ms": 763,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "de263d92-87e4-4b86-873e-606c3bf9e184"
+  },
+  {
+    "timestamp": "2026-01-27 15:26:38.111029",
+    "type": "query",
+    "data": {
+      "question": "How does the textbook aim to develop the 21st Century learner's skills in collaboration, critical thinking, problem-solving, and digital literacy?",
+      "answer_length": 2404,
+      "confidence_score": 0.24,
+      "processing_time_ms": 7807,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "aaac28f3-90bc-43d1-a553-6e02aebf13b7"
+  },
+  {
+    "timestamp": "2026-01-27 15:26:49.958003",
+    "type": "query",
+    "data": {
+      "question": "How does the textbook aim to develop the 21st Century learner's skills in collaboration, critical thinking, problem-solving, and digital literacy?",
+      "answer_length": 2387,
+      "confidence_score": 0.24,
+      "processing_time_ms": 11795,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "3178e6ca-b708-41cb-ab4d-ad74c9ee76c8"
+  },
+  {
+    "timestamp": "2026-01-27 15:27:01.778099",
+    "type": "query",
+    "data": {
+      "question": "How does the textbook aim to develop the 21st Century learner's skills in collaboration, critical thinking, problem-solving, and digital literacy?",
+      "answer_length": 2049,
+      "confidence_score": 0.24,
+      "processing_time_ms": 11770,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "a675c04e-4d68-40bb-826e-394e21e26f68"
+  },
+  {
+    "timestamp": "2026-01-27 15:27:13.594108",
+    "type": "query",
+    "data": {
+      "question": "How does the textbook aim to develop the 21st Century learner's skills in collaboration, critical thinking, problem-solving, and digital literacy?",
+      "answer_length": 2096,
+      "confidence_score": 0.24,
+      "processing_time_ms": 11758,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "f572f528-08b9-4160-91bd-27f7cb88e4e1"
+  },
+  {
+    "timestamp": "2026-01-27 15:27:23.491820",
+    "type": "query",
+    "data": {
+      "question": "How does the textbook aim to develop the 21st Century learner's skills in collaboration, critical thinking, problem-solving, and digital literacy?",
+      "answer_length": 2262,
+      "confidence_score": 0.24,
+      "processing_time_ms": 9831,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "8bc5d474-e17b-4068-9a4f-fdf24aa88d08"
+  },
+  {
+    "timestamp": "2026-01-27 15:27:36.294409",
+    "type": "query",
+    "data": {
+      "question": "What are the specific skills in Speaking and Writing that the textbook aims to improve in students, and how are they assessed?",
+      "answer_length": 1980,
+      "confidence_score": 0.33,
+      "processing_time_ms": 12752,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "18680e03-a753-42a9-83dd-6154c358c994"
+  },
+  {
+    "timestamp": "2026-01-27 15:27:49.121929",
+    "type": "query",
+    "data": {
+      "question": "What types of contemporary issues are addressed in the textbook, and how do they relate to the skills and knowledge that students are expected to acquire?",
+      "answer_length": 1855,
+      "confidence_score": 0.18,
+      "processing_time_ms": 10779,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "4ed60ac5-507a-44e5-88e9-5c17cb7ccaac"
+  },
+  {
+    "timestamp": "2026-01-27 15:28:28.110385",
+    "type": "query",
+    "data": {
+      "question": "What are the key recommendations of the National Curriculum Framework 2005 that the 12th General English syllabus is aligned with?",
+      "answer_length": 1985,
+      "confidence_score": 0.41,
+      "processing_time_ms": 650,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "94108c19-2205-4442-afdf-d6ba2b8f7257"
+  },
+  {
+    "timestamp": "2026-01-27 15:35:59.463914",
+    "type": "query",
+    "data": {
+      "question": "What are the vacation policies?",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "be259eb0-12a2-4436-8b5a-61e265ba2004"
+  },
+  {
+    "timestamp": "2026-01-27 15:38:40.175215",
+    "type": "upload",
+    "data": {
+      "filename": "Class_12_English_English_Medium-2024_Edition-www.tntextbooks.in_compressed.pdf",
+      "file_size": 23165986,
+      "chunks_created": 666,
+      "success": true
+    },
+    "session_id": "dfbe7b71-1e8e-4483-97e2-b4944aacd4cb"
+  },
+  {
+    "timestamp": "2026-01-27 15:39:33.106984",
+    "type": "query",
+    "data": {
+      "question": "moment of inertia",
+      "answer_length": 87,
+      "confidence_score": 0.0,
+      "processing_time_ms": 0,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "7f0c1fdc-9359-4cbe-b214-7691d57264dc"
+  },
+  {
+    "timestamp": "2026-01-27 15:39:54.066810",
+    "type": "query",
+    "data": {
+      "question": "the chair",
+      "answer_length": 2050,
+      "confidence_score": 0.29,
+      "processing_time_ms": 965,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "c6506d6c-1430-42a3-8e09-a5413733f3cf"
+  },
+  {
+    "timestamp": "2026-01-27 19:15:33.581221",
+    "type": "upload",
+    "data": {
+      "filename": "Class_11_Physics_English_Medium-Volume_1-2024_Edition-www.tntextbooks.in.pdf",
+      "file_size": 48288534,
+      "chunks_created": 842,
+      "success": true
+    },
+    "session_id": "0e6212d8-750a-46f2-a4f6-51eba2d81e24"
+  },
+  {
+    "timestamp": "2026-01-27 19:15:47.368322",
+    "type": "query",
+    "data": {
+      "question": "What are the main topics covered in this document?",
+      "answer_length": 1845,
+      "confidence_score": 0.02,
+      "processing_time_ms": 996,
+      "language": "en",
+      "success": true
+    },
+    "session_id": "b43bfc25-4810-4e4e-9bbf-234b1e9c9aac"
+  }
+]
